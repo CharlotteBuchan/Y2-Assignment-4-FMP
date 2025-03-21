@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: bb553192f24414d4496a253da6aa02c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1199292017235754390
+    second: attack animation Sheet_0
+  - first:
+      213: 6902702706353268347
+    second: attack animation Sheet_1
+  - first:
+      213: -1414896591002615322
+    second: attack animation Sheet_2
+  - first:
+      213: 7251037539321917966
+    second: attack animation Sheet_3
+  - first:
+      213: 9097959919877998530
+    second: attack animation Sheet_4
+  - first:
+      213: 5607226253633840603
+    second: attack animation Sheet_5
+  - first:
+      213: -384773476177658998
+    second: attack animation Sheet_6
+  - first:
+      213: -3162761772058048878
+    second: attack animation Sheet_7
+  - first:
+      213: 8442095345050581554
+    second: attack animation Sheet_8
+  - first:
+      213: 5752134104845147310
+    second: attack animation Sheet_9
+  - first:
+      213: 7392382648702968000
+    second: attack animation Sheet_10
+  - first:
+      213: -6736070379217415122
+    second: attack animation Sheet_11
+  - first:
+      213: -7282375683585576550
+    second: attack animation Sheet_12
+  - first:
+      213: 3489730221276978397
+    second: attack animation Sheet_13
+  - first:
+      213: -3029606246446741981
+    second: attack animation Sheet_14
+  - first:
+      213: 3632789089084620290
+    second: attack animation Sheet_15
+  - first:
+      213: -5008341133090108211
+    second: attack animation Sheet_16
+  - first:
+      213: 1575043746595617654
+    second: attack animation Sheet_17
+  - first:
+      213: 6956387412092225140
+    second: attack animation Sheet_18
+  - first:
+      213: -6467203783338769412
+    second: attack animation Sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attack animation Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 104
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6283b2b3424b5fe0800000000000000
+      internalID: -1199292017235754390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 100
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7660521a835bcf50800000000000000
+      internalID: 6902702706353268347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 100
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1c0630c074d5ce0800000000000000
+      internalID: -1414896591002615322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 102
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e023e40793cd0a460800000000000000
+      internalID: 7251037539321917966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 104
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7c1151852724e70800000000000000
+      internalID: 9097959919877998530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 70
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5e61fb19ed0dd40800000000000000
+      internalID: 5607226253633840603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 69
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b3071ef8209aaf0800000000000000
+      internalID: -384773476177658998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 69
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2968b43ecec9b14d0800000000000000
+      internalID: -3162761772058048878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 69
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23af7b9fcf8582570800000000000000
+      internalID: 8442095345050581554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 69
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac54b30e7fa3df40800000000000000
+      internalID: 5752134104845147310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 40
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0a3bb3ad4079660800000000000000
+      internalID: 7392382648702968000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 37
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2417b8edaba482a0800000000000000
+      internalID: -6736070379217415122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 33
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9170f246edcfea90800000000000000
+      internalID: -7282375683585576550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 33
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcd82995230e6030800000000000000
+      internalID: 3489730221276978397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 33
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326cc3f9b2da4f5d0800000000000000
+      internalID: -3029606246446741981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ebdcedd624a6230800000000000000
+      internalID: 3632789089084620290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 5
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcccf28564cce7ab0800000000000000
+      internalID: -5008341133090108211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 8
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b388d41fdabd510800000000000000
+      internalID: 1575043746595617654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 8
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47681c9ae7d0a8060800000000000000
+      internalID: 6956387412092225140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack animation Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 8
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3c70c7c60ef36a0800000000000000
+      internalID: -6467203783338769412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      attack animation Sheet_0: -1199292017235754390
+      attack animation Sheet_1: 6902702706353268347
+      attack animation Sheet_10: 7392382648702968000
+      attack animation Sheet_11: -6736070379217415122
+      attack animation Sheet_12: -7282375683585576550
+      attack animation Sheet_13: 3489730221276978397
+      attack animation Sheet_14: -3029606246446741981
+      attack animation Sheet_15: 3632789089084620290
+      attack animation Sheet_16: -5008341133090108211
+      attack animation Sheet_17: 1575043746595617654
+      attack animation Sheet_18: 6956387412092225140
+      attack animation Sheet_19: -6467203783338769412
+      attack animation Sheet_2: -1414896591002615322
+      attack animation Sheet_3: 7251037539321917966
+      attack animation Sheet_4: 9097959919877998530
+      attack animation Sheet_5: 5607226253633840603
+      attack animation Sheet_6: -384773476177658998
+      attack animation Sheet_7: -3162761772058048878
+      attack animation Sheet_8: 8442095345050581554
+      attack animation Sheet_9: 5752134104845147310
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

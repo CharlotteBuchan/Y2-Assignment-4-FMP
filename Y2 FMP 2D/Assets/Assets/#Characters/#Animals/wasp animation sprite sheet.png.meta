@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 9b3530e1aa935bd4bbcb6981c52aa2ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1070655712460577804
+    second: wasp animation sprite sheet_0
+  - first:
+      213: -3659178096104875209
+    second: wasp animation sprite sheet_1
+  - first:
+      213: -5790243810308658883
+    second: wasp animation sprite sheet_2
+  - first:
+      213: 6364640182548106489
+    second: wasp animation sprite sheet_3
+  - first:
+      213: 2982641090331169090
+    second: wasp animation sprite sheet_4
+  - first:
+      213: 3615898830842044091
+    second: wasp animation sprite sheet_5
+  - first:
+      213: 4300941367083037979
+    second: wasp animation sprite sheet_6
+  - first:
+      213: -4393339738471769376
+    second: wasp animation sprite sheet_7
+  - first:
+      213: 3455803821312500851
+    second: wasp animation sprite sheet_8
+  - first:
+      213: -3848897379427606300
+    second: wasp animation sprite sheet_9
+  - first:
+      213: -6058617448881511797
+    second: wasp animation sprite sheet_10
+  - first:
+      213: -6098309907269119992
+    second: wasp animation sprite sheet_11
+  - first:
+      213: -9205365031956949851
+    second: wasp animation sprite sheet_12
+  - first:
+      213: 2347793683666715460
+    second: wasp animation sprite sheet_13
+  - first:
+      213: 3471140579417759628
+    second: wasp animation sprite sheet_14
+  - first:
+      213: -6979831340697942645
+    second: wasp animation sprite sheet_15
+  - first:
+      213: -2446986105655449277
+    second: wasp animation sprite sheet_16
+  - first:
+      213: -701479297067626349
+    second: wasp animation sprite sheet_17
+  - first:
+      213: -4008447581573263443
+    second: wasp animation sprite sheet_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 101
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c94f9a2bbbbde00800000000000000
+      internalID: 1070655712460577804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 101
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b57c3a8ecf73dc0800000000000000
+      internalID: -3659178096104875209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 101
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39e5abbeebe4afa0800000000000000
+      internalID: -5790243810308658883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 101
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc05f3568eb35850800000000000000
+      internalID: 6364640182548106489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 69
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2415ca9d448746920800000000000000
+      internalID: 2982641090331169090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 69
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe171c24d04e2230800000000000000
+      internalID: 3615898830842044091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 69
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1574c0d26300bb30800000000000000
+      internalID: 4300941367083037979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 69
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea58c6e8c8b703c0800000000000000
+      internalID: -4393339738471769376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 69
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374e4ce044b75ff20800000000000000
+      internalID: 3455803821312500851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 69
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0294ac938f59ac0800000000000000
+      internalID: -3848897379427606300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 37
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b822f69b7877beba0800000000000000
+      internalID: -6058617448881511797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 37
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8009af613737e5ba0800000000000000
+      internalID: -6098309907269119992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 37
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4576a8649ff3080800000000000000
+      internalID: -9205365031956949851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 37
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4434cd88ae9059020800000000000000
+      internalID: 2347793683666715460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 5
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f93a157f7fb2030800000000000000
+      internalID: 3471140579417759628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 5
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b858f895068a22f90800000000000000
+      internalID: -6979831340697942645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 5
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34927120a1f8a0ed0800000000000000
+      internalID: -2446986105655449277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 5
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3905ef0cb48d346f0800000000000000
+      internalID: -701479297067626349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp animation sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 4
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf4d8789222f58c0800000000000000
+      internalID: -4008447581573263443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wasp animation sprite sheet_0: 1070655712460577804
+      wasp animation sprite sheet_1: -3659178096104875209
+      wasp animation sprite sheet_10: -6058617448881511797
+      wasp animation sprite sheet_11: -6098309907269119992
+      wasp animation sprite sheet_12: -9205365031956949851
+      wasp animation sprite sheet_13: 2347793683666715460
+      wasp animation sprite sheet_14: 3471140579417759628
+      wasp animation sprite sheet_15: -6979831340697942645
+      wasp animation sprite sheet_16: -2446986105655449277
+      wasp animation sprite sheet_17: -701479297067626349
+      wasp animation sprite sheet_18: -4008447581573263443
+      wasp animation sprite sheet_2: -5790243810308658883
+      wasp animation sprite sheet_3: 6364640182548106489
+      wasp animation sprite sheet_4: 2982641090331169090
+      wasp animation sprite sheet_5: 3615898830842044091
+      wasp animation sprite sheet_6: 4300941367083037979
+      wasp animation sprite sheet_7: -4393339738471769376
+      wasp animation sprite sheet_8: 3455803821312500851
+      wasp animation sprite sheet_9: -3848897379427606300
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

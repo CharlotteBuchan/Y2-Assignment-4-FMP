@@ -3,9 +3,9 @@ using UnityEngine.InputSystem;
 
 public class CharacterMovement : MonoBehaviour
 {
-    [SerializeField] private int speed;
+    public int speed;
 
-    private Vector2 movement;
+    public Vector2 movement;
     private Rigidbody2D rb;
     private Animator animator;
 
@@ -37,5 +37,4 @@ public class CharacterMovement : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
-
 }
