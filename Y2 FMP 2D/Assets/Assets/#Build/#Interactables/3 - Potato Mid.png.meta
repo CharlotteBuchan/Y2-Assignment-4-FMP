@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3 - Potato Mid_1
+      name: 3 - Potato Mid_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1
+        y: 4
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67ca9d67b7cbbf64b8459f19d56e1757
-      internalID: 25816863
+      spriteID: 39efed5ba7b9efd44925fbf7ba37ae50
+      internalID: 3839036680818419425
       vertices: []
       indices: 
       edges: []
@@ -162,7 +162,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       3 - Potato Mid_0: 3839036680818419425
-      3 - Potato Mid_1: 25816863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

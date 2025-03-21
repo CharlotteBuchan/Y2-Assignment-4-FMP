@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,17 +135,30 @@ TextureImporter:
       name: Oak_Tree_Small_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 13
-        width: 9
-        height: 10
+        x: 0
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -3, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: -7}
+        - {x: -2, y: -7}
+        - {x: -3, y: -7}
+      - - {x: -2, y: -7}
+        - {x: 2, y: -7}
+        - {x: 2, y: -3}
+        - {x: 1, y: -3}
+        - {x: 1, y: -2}
+        - {x: -1, y: -2}
+        - {x: -1, y: -3}
+        - {x: -2, y: -3}
+      tessellationDetail: 0
       bones: []
       spriteID: 4481faaf7c327e430800000000000000
       internalID: 3812054951403657284
@@ -157,17 +170,25 @@ TextureImporter:
       name: Oak_Tree_Small_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 10
-        width: 25
-        height: 36
+        x: 32
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -3, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: -7}
+        - {x: -3, y: -7}
+      - - {x: -2, y: -7}
+        - {x: 2, y: -7}
+        - {x: 2, y: 0}
+        - {x: -2, y: 0}
+      tessellationDetail: 0
       bones: []
       spriteID: e7b6a006f1ac68950800000000000000
       internalID: 6451065752358906750
@@ -179,17 +200,43 @@ TextureImporter:
       name: Oak_Tree_Small_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 18
-        width: 25
-        height: 28
+        x: 64
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -2, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: 0}
+        - {x: -2, y: 0}
+      - - {x: 10, y: 2}
+        - {x: 11, y: 3}
+        - {x: 12, y: 7}
+        - {x: 12, y: 13}
+        - {x: 11, y: 14}
+        - {x: 10, y: 17}
+        - {x: 9, y: 18}
+        - {x: 6, y: 19}
+        - {x: 3, y: 21}
+        - {x: -3, y: 21}
+        - {x: -6, y: 19}
+        - {x: -11, y: 14}
+        - {x: -11, y: 9}
+        - {x: -10, y: 8}
+        - {x: -10, y: 5}
+        - {x: -7, y: 2}
+        - {x: -5, y: 1}
+        - {x: -4, y: 0}
+        - {x: -2, y: 0}
+        - {x: 2, y: -1}
+        - {x: 4, y: -1}
+        - {x: 7, y: 0}
+      tessellationDetail: 1
       bones: []
       spriteID: 7d72ec45c4ca52360800000000000000
       internalID: 7144305827733448663
@@ -201,7 +248,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 58c984294508e5f4e91b8e1b5e229768
     internalID: 0
     vertices: []
     indices: 

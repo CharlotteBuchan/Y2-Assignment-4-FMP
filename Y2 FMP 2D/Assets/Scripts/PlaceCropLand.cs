@@ -23,13 +23,6 @@ public class PlaceCropLand : MonoBehaviour
     {
         Vector3Int currentCell = highlightMap.WorldToCell(transform.position);
 
-        //if (animator.GetCurrentAnimatorStateInfo(0).IsName("Hoeing Blend Tree"))
-        //{
-        //    Debug.Log("hi");
-        //    animator.SetBool("IsHoeing", false);
-        //    speedScript.speed = 20;
-        //}
-
         if (Input.GetKeyDown(KeyCode.R))
         {
 

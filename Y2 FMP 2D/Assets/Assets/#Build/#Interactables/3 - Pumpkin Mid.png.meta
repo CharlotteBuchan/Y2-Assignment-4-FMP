@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3 - Pumpkin Mid_1
+      name: 3 - Pumpkin Mid_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1
+        y: 4
+        width: 15
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb2d05f743745b3458c4109170517dfd
-      internalID: 797055166
+      spriteID: 4de8989b9df23ce4eba1c68d223aba5f
+      internalID: 1287617536143113716
       vertices: []
       indices: 
       edges: []
@@ -162,7 +162,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       3 - Pumpkin Mid_0: 1287617536143113716
-      3 - Pumpkin Mid_1: 797055166
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
