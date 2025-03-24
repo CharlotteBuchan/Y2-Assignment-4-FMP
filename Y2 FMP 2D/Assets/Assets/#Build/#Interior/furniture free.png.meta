@@ -145,9 +145,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 15
-        width: 57
-        height: 33
+        y: 16
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,9 +166,9 @@ TextureImporter:
       name: furniture free_1
       rect:
         serializedVersion: 2
-        x: 65
+        x: 16
         y: 32
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,10 +188,10 @@ TextureImporter:
       name: furniture free_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 16
-        width: 14
-        height: 17
+        x: 32
+        y: 29
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,35 +207,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: furniture free_3
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 420eda5eaf3287470800000000000000
-      internalID: 8392497466107093028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: furniture free_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 64
+        y: 32
         width: 16
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,23 +229,133 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: furniture free_5
+      name: furniture free_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 15
-        height: 17
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e292f79441a079b10800000000000000
-      internalID: 1988068842756057390
+      spriteID: a20f78711d7b85540af6c21923842ccd
+      internalID: 16991673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furniture free_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 29
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ac03b9dd7d5d946a186d7441fbfb91
+      internalID: 2113339912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furniture free_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643dc7c40863d9647820803f6423572b
+      internalID: -952357445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furniture free_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0b1dd600777424e8b97f9d4c981c4e
+      internalID: 885446516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furniture free_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d3bc6b5595c0c46bfda3ec9578e5d4
+      internalID: -1386496215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furniture free_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a23bb41764bff4d8393f893cf1ad6e
+      internalID: 1064739216
       vertices: []
       indices: 
       edges: []
@@ -276,7 +364,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ff7c18b3792c77f46bc7078aa6653f46
     internalID: 0
     vertices: []
     indices: 
@@ -288,10 +376,17 @@ TextureImporter:
     nameFileIdTable:
       furniture free_0: 5724885910011694229
       furniture free_1: 1678429356292302637
+      furniture free_10: 885446516
+      furniture free_11: -1386496215
+      furniture free_12: 1064739216
       furniture free_2: -1939544637214341617
       furniture free_3: 8392497466107093028
       furniture free_4: 6625881941199260924
       furniture free_5: 1988068842756057390
+      furniture free_6: 16991673
+      furniture free_7: 2113339912
+      furniture free_8: 2126260191
+      furniture free_9: -952357445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
