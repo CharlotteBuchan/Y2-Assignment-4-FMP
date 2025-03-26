@@ -9,6 +9,8 @@ public class Transition : MonoBehaviour
     [SerializeField] GameObject teleportTo;
     [SerializeField] GameObject player;
     [SerializeField] PlayerInput playerInput;
+    [SerializeField] GameObject vignetteImage;
+    [SerializeField] bool activeInactive;
 
     Vector3 smallSize = new Vector3(0.1f, 0.1f, 0.1f);
     Vector3 bigSize = new Vector3(3.5f, 3.5f, 3.5f);
@@ -49,6 +51,10 @@ public class Transition : MonoBehaviour
 
     private IEnumerator ScaleUpAnimation(float time)
     {
+        if (vignetteImage != null)
+        {
+            vignetteImage.SetActive(activeInactive);
+        }
         Debug.Log("UP!");
         float i = 0;
         float rate = 1 / time;
