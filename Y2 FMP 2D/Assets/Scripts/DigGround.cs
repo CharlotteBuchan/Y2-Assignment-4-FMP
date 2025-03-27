@@ -10,7 +10,6 @@ public class DigGround : MonoBehaviour
     private Animator animator;
     public CharacterMovement speedScript;
 
-
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -20,10 +19,12 @@ public class DigGround : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3Int tilePos = highlightMap.WorldToCell(worldPos);
+        //Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //Vector3Int tilePos = highlightMap.WorldToCell(worldPos);
 
-        Vector3Int currentCell = highlightMap.WorldToCell(tilePos);
+        //Vector3Int currentCell = highlightMap.WorldToCell(tilePos);
+
+        Vector3Int currentCell = highlightMap.WorldToCell(transform.position);
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
