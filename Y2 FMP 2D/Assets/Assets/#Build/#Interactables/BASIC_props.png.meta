@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,17 +147,17 @@ TextureImporter:
       name: BASIC_props_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 54
-        width: 30
-        height: 36
+        x: 0
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 9e9b6c38f781f2d80800000000000000
       internalID: -8273367054505559575
@@ -169,17 +169,17 @@ TextureImporter:
       name: BASIC_props_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 64
-        width: 43
-        height: 17
+        x: 16
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: fe4051e2cbc5e3250800000000000000
       internalID: 5926276122962887919
@@ -191,17 +191,17 @@ TextureImporter:
       name: BASIC_props_2
       rect:
         serializedVersion: 2
-        x: 47
-        y: 0
-        width: 50
-        height: 64
+        x: 32
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 3566efd9388773880800000000000000
       internalID: -8631297654145522093
@@ -213,17 +213,17 @@ TextureImporter:
       name: BASIC_props_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 0
         y: 64
-        width: 10
-        height: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 46bba8e433a807370800000000000000
       internalID: 8318300464718986084
@@ -235,17 +235,17 @@ TextureImporter:
       name: BASIC_props_4
       rect:
         serializedVersion: 2
-        x: 102
-        y: 47
-        width: 10
-        height: 17
+        x: 16
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: ecf431c5829b012b0800000000000000
       internalID: -5615785152336408626
@@ -257,17 +257,17 @@ TextureImporter:
       name: BASIC_props_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 31
-        width: 48
-        height: 17
+        x: 32
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 94c678db338828310800000000000000
       internalID: 1405835789497494601
@@ -279,20 +279,388 @@ TextureImporter:
       name: BASIC_props_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 48
-        height: 32
+        x: 48
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: ea709695d959076a0800000000000000
       internalID: -6453493762979461202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84838bd9b642da4791a6b5b25acbf49
+      internalID: 1563756314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65ab53161c5fa840a09e9355534501f
+      internalID: -181053246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07eb78d61bb19714cad7fa4514e8e2ad
+      internalID: 1945860460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa2db4710825e74db1431e44de1bc35
+      internalID: -945022141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1756fbdccccb41468c772f5eb29a01f
+      internalID: -1259794742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d888ce1527c40d438b3a565856c1533
+      internalID: 146313422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0021b07980333704285365ee6e4ee182
+      internalID: 1119377924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334e0a169b0ff0d458f8886ea7758a23
+      internalID: 1821759693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bf911dcb2fbfa42a52f9d905874cb7
+      internalID: 1173375296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0705aecce335af3468fca842d3a2cbe7
+      internalID: -614562867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -23, y: 5}
+        - {x: -23, y: -6}
+        - {x: -21, y: -8}
+        - {x: 21, y: -8}
+        - {x: 23, y: -6}
+        - {x: 23, y: 5}
+        - {x: 21, y: 7}
+        - {x: -21, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0164a5a61f503b45954cfa8c7dab796
+      internalID: 1267145106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_32
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -6, y: -22}
+        - {x: -4, y: -24}
+        - {x: 5, y: -24}
+        - {x: 7, y: -22}
+        - {x: 7, y: 22}
+        - {x: 5, y: 24}
+        - {x: -4, y: 24}
+        - {x: -6, y: 22}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3def7707e4ed8e74a96782e90ee96851
+      internalID: -295015597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b982e4c903dd2946820cf916f447ee8
+      internalID: -717933060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a0cf640790da64eb5c51aca9f9444c
+      internalID: 958991681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9cb353565224b42b2e07b1ae0cc237
+      internalID: 627016790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BASIC_props_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1358bc89edacce6418002faf83597507
+      internalID: 725447497
       vertices: []
       indices: 
       edges: []
@@ -301,7 +669,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f046e4749bf7c6f449e3eb52bfa0a272
     internalID: 0
     vertices: []
     indices: 
@@ -313,11 +681,39 @@ TextureImporter:
     nameFileIdTable:
       BASIC_props_0: -8273367054505559575
       BASIC_props_1: 5926276122962887919
+      BASIC_props_10: -945022141
+      BASIC_props_11: -1259794742
+      BASIC_props_12: 146313422
+      BASIC_props_13: 1119377924
+      BASIC_props_14: 1821759693
+      BASIC_props_15: 1173375296
+      BASIC_props_16: -614562867
+      BASIC_props_17: -717933060
+      BASIC_props_18: 958991681
+      BASIC_props_19: 627016790
       BASIC_props_2: -8631297654145522093
+      BASIC_props_20: 725447497
+      BASIC_props_21: -253021840
+      BASIC_props_22: 1054832545
+      BASIC_props_23: 1267145106
+      BASIC_props_24: -199655286
+      BASIC_props_25: 920945207
+      BASIC_props_26: -2007866983
+      BASIC_props_27: 1817861824
+      BASIC_props_28: -13007606
+      BASIC_props_29: 1456952614
       BASIC_props_3: 8318300464718986084
+      BASIC_props_30: 900593368
+      BASIC_props_31: -882097599
+      BASIC_props_32: -295015597
+      BASIC_props_33: 438868484
+      BASIC_props_34: 655008903
       BASIC_props_4: -5615785152336408626
       BASIC_props_5: 1405835789497494601
       BASIC_props_6: -6453493762979461202
+      BASIC_props_7: 1563756314
+      BASIC_props_8: -181053246
+      BASIC_props_9: 1945860460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
