@@ -32,8 +32,6 @@ public class PlaceCropLand : MonoBehaviour
 
             animator.Play("Hoeing Blend Tree");
 
-            Debug.Log(speedScript.speed);
-
             highlightMap.SetTile(currentCell, highlightTile);
 
             animator.SetBool("IsHoeing", false);
