@@ -1,22 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Item;
 
 public class PickupItem : MonoBehaviour
 {
-    [SerializeField] private options Option;
+    private ActionType actionType;
+    public ItemType itemType;
     private Animator animator;
     [SerializeField] private GameObject player;
     private PlayerInput playerInput;
     private bool touching;
-
-    private enum options
-    {
-        touch,
-        chop,
-        dig,
-        hoe,
-        water,
-    }
+    public Item item;
 
     private void Awake()
     {
@@ -41,33 +35,15 @@ public class PickupItem : MonoBehaviour
             if (touching == true)
             {
                 Debug.Log("Input");
-                switch (Option)
+                switch (actionType)
                 {
-                    case options.touch:
-                        Touch();
-                        break;
-
-                    case options.chop:
+                    case Item.ActionType.chop:
                         Debug.Log("Option Chop");
                         Chop();
                         break;
 
-                    case options.dig:
-                        Dig();
-                        break;
-
-                    case options.hoe:
-                        Hoe();
-                        break;
-
-                    case options.water:
-                        Water();
-                        break;
-
                     default:
-
                         break;
-
                 }
             }
         }
@@ -89,21 +65,11 @@ public class PickupItem : MonoBehaviour
         animator.SetBool("IsChopping", false);
     }
 
-    private void Water()
+    private void RefreshInput()
     {
-
+        if (((animator.GetCurrentAnimatorStateInfo(0).IsName("Idle Blend Tree")) == true) || ((animator.GetCurrentAnimatorStateInfo(0).IsName("Walking Blend Tree")) == true))
+        {
+            playerInput.enabled = true;
+        }
     }
-    private void Hoe()
-    {
-
-    }
-    private void Dig()
-    {
-
-    }
-    private void Touch()
-    {
-
-    }
-
 }

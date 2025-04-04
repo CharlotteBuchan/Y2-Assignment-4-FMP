@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 698705164659751278}
   - component: {fileID: 3255138507249666948}
   - component: {fileID: 5189099138080042827}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3829410216528096766}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.01, y: 0, z: 0}
-  m_LocalScale: {x: 6.5, y: 6.5, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4323426767096952928}
@@ -207,7 +207,9 @@ GameObject:
   - component: {fileID: 4323426767096952928}
   - component: {fileID: 5302603520394297918}
   - component: {fileID: 8484856178488446173}
-  m_Layer: 0
+  - component: {fileID: 8992378719096485451}
+  - component: {fileID: 7232257402330353611}
+  m_Layer: 16
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,5 +299,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
-  offset: -3
+  offset: -2
   runOnlyOnce: 1
+--- !u!58 &8992378719096485451
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361076278906458704}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.1876831}
+  m_Radius: 0.92849964
+--- !u!114 &7232257402330353611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361076278906458704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1da97ef24aed3408e31ea2e327ec87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 0
+  player: {fileID: 0}
+  item: {fileID: 0}
