@@ -2,10 +2,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour , IDropHandler
+public class InventorySlot : MonoBehaviour , IDropHandler , IPointerEnterHandler, IPointerExitHandler
 {
     public Image image;
     public Sprite selectedSprite, notSelectedSprite;
+    public bool isOnSlot;
 
     private void Awake()
     {
@@ -41,5 +42,15 @@ public class InventorySlot : MonoBehaviour , IDropHandler
             currentDraggable.transform.SetParent(inventoryItem.parentAfterDrag);
             inventoryItem.parentAfterDrag = transform;
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isOnSlot = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isOnSlot = false;
     }
 }

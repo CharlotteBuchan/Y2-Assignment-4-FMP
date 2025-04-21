@@ -3,9 +3,10 @@ using UnityEngine.EventSystems;
 
 public class InventoryManager : MonoBehaviour
 {
-    public int maxStackedItems = 4;
+    public int maxStackedItems = 64;
     public InventorySlot[] inventorySlots;
     public GameObject inventoryItemPrefab;
+    private InventorySlot inventorySlot;
 
     int selectedSlot = -1;
 
@@ -39,6 +40,19 @@ public class InventoryManager : MonoBehaviour
             }
             ChangeSelectedSlot(newValue % 9);
         }
+
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    if (inventorySlot.isOnSlot == true)
+        //    {
+        //        Debug.Log("Is On");
+        //    }
+        //
+        //    else
+        //    {
+        //        Debug.Log("Nuhuh");
+        //    }
+        //}
     }
 
     void ChangeSelectedSlot(int newValue)
@@ -59,7 +73,10 @@ public class InventoryManager : MonoBehaviour
         {
             InventorySlot slot = inventorySlots[i];
             InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
-            if ((itemInSlot != null) && (itemInSlot.item == item) && (itemInSlot.count < maxStackedItems) && (itemInSlot.item.stackable == true))
+            if ((itemInSlot != null) && 
+                (itemInSlot.item == item) && 
+                (itemInSlot.count < maxStackedItems) && 
+                (itemInSlot.item.stackable == true))
             {
                 itemInSlot.count++;
                 itemInSlot.RefreshCount();

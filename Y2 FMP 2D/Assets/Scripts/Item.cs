@@ -12,6 +12,9 @@ public class Item : ScriptableObject
     {
         tool,
         material,
+        playerFood,
+        animalFood,
+        seed,
         buildingBlock,
     }
 
@@ -20,11 +23,13 @@ public class Item : ScriptableObject
         none,
         chop,
         hoe,
-        water,
-        feed,
         dig,
+        water,
+        plant,
         touch,
-        plant
+        craft,
+        feed,
+        eat,
     }
 
     [Header("Only gameplay")]

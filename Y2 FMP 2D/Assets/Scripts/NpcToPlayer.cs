@@ -4,9 +4,11 @@ using UnityEngine;
 public class NpcToPlayer : MonoBehaviour
 {
 
-    [SerializeField] private GameObject target;
     [SerializeField] private float speed;
-    [SerializeField] private GameObject babyFollow;
+    private InventoryManager inventoryManager;
+    public GameObject target;
+    public bool needsFood;
+    public string foodReq;
     public Vector2 space;
     public float range;
     public bool isHolding;
@@ -23,6 +25,7 @@ public class NpcToPlayer : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        inventoryManager = GameObject.FindWithTag("GameController").GetComponent<InventoryManager>();
     }
 
     // Update is called once per frame
@@ -30,7 +33,7 @@ public class NpcToPlayer : MonoBehaviour
     {
         float distance = Vector3.Distance(target.transform.position, transform.position);
 
-        if (distance <= range)
+        if (distance <= range && isHolding == true)
         {
             Vector2 playerLocation = target.transform.position;
             playerWithSpace = playerLocation - space;
@@ -48,19 +51,6 @@ public class NpcToPlayer : MonoBehaviour
                 animator.SetFloat("X", x);
                 animator.SetBool("IsWalking", true);
             }
-
-            if (babyFollow != null)
-            {
-                if (x > 5)
-                {
-                    babyFollow.transform.localPosition = new Vector2(-2.5f, -1);
-                }
-
-                else if (x < 5)
-                {
-                    babyFollow.transform.localPosition = new Vector2(2.5f, -1);
-                }
-            }
         }
 
         else if ((this.transform.position.Equals(lastPos)) == true)
@@ -69,5 +59,28 @@ public class NpcToPlayer : MonoBehaviour
         }
 
         lastPos = this.transform.position;
+    }
+
+    private void Update()
+    {
+        if (needsFood == true)
+        {
+            Item foodItem = inventoryManager.GetSelectedItem(false);
+
+            if ((foodItem != null) && (foodItem.name == foodReq))
+            {
+                isHolding = true;
+            }
+
+            else if ((foodItem == null) || (foodItem.name != foodReq))
+            {
+                isHolding = false;
+            }
+        }
+
+        else
+        {
+            isHolding = true;
+        }
     }
 }

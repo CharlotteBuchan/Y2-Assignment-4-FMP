@@ -4,6 +4,8 @@ public class DemoPickupScript : MonoBehaviour
 {
     public InventoryManager inventoryManager;
     public Item[] itemsToPickup;
+    public GameObject prefabChick;
+    public GameObject spawnTarget;
 
     public void PickupItem(int id)
     {
@@ -23,7 +25,6 @@ public class DemoPickupScript : MonoBehaviour
         Item receivedItem = inventoryManager.GetSelectedItem(false);
         if (receivedItem != null)
         {
-            Debug.Log("Received item" + receivedItem);
         }
         else
         {
@@ -36,11 +37,16 @@ public class DemoPickupScript : MonoBehaviour
         Item receivedItem = inventoryManager.GetSelectedItem(true);
         if (receivedItem != null)
         {
-            Debug.Log("Used item" + receivedItem);
+            
         }
         else
         {
             Debug.Log("No item used!");
         }
+    }
+
+    public void SPAWNCHICKEN()
+    {
+        Instantiate(prefabChick, spawnTarget.transform.position, Quaternion.identity);
     }
 }
