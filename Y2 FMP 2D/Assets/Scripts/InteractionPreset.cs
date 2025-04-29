@@ -8,13 +8,14 @@ public class InteractionPreset : MonoBehaviour
     private TextMeshProUGUI interactText;
     private NpcToPlayer npcToPlayer;
     private GameObject textGO;
-    private bool isNear;
+    [HideInInspector] public bool isNear;
 
     public enum InteractType
     {
         feed,
         chop,
         harvest,
+        collect,
     }
 
     private void Start()
@@ -22,20 +23,19 @@ public class InteractionPreset : MonoBehaviour
         npcToPlayer = GetComponent<NpcToPlayer>();
         textGO = GameObject.FindWithTag("InteractTag");
         interactText = textGO.GetComponent<TextMeshProUGUI>();
-        textGO.SetActive(false);
+        interactText.text = " ";
     }
 
     private void Update()
     {
         if (isNear == true)
         {
-            textGO.SetActive(true);
             VariantCheck();
         }
 
         else if (isNear == false)
         {
-            textGO.SetActive(false);
+            interactText.text = " ";
         }
     }
 
@@ -61,18 +61,28 @@ public class InteractionPreset : MonoBehaviour
         {
             if (npcToPlayer.isHolding == true)
             {
-                interactText.text = "Feed animal";
+                interactText.text = "[E] - Feed Animal";
+            }
+
+            else
+            {
+                interactText.text = " ";
             }
         }
 
         else if (interactType == InteractType.chop)
         {
-
+            interactText.text = "[E] - Chop Wood";
         }
 
         else if (interactType == InteractType.harvest)
         {
+            interactText.text = "[E] - Harvest";
+        }
 
+        else if (interactType == InteractType.collect)
+        {
+            interactText.text = "[E] - Collect";
         }
     }
 }

@@ -14,10 +14,12 @@ GameObject:
   - component: {fileID: 4260131120223888461}
   - component: {fileID: 704109977911099839}
   - component: {fileID: 2295242484935336731}
+  - component: {fileID: 6441626731070185786}
+  - component: {fileID: 4033927264670672309}
   - component: {fileID: 4473974347331829618}
   m_Layer: 19
   m_Name: Cow
-  m_TagString: Untagged
+  m_TagString: CowAdult
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +138,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1048576
+    m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -154,10 +156,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1048576
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1572864
+    m_Bits: 524288
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -199,12 +201,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 239081ae96aaf694ab5e485664d2214b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   speed: 4
-  babyFollow: {fileID: 0}
-  space: {x: 5, y: 2}
+  target: {fileID: 0}
+  needsFood: 1
+  foodReq: Wheat
+  space: {x: 0, y: 0}
   range: 25
   isHolding: 0
+--- !u!114 &6441626731070185786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531131809029560925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12fa586f67fdbb240b7639d73f13fe19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+--- !u!114 &4033927264670672309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531131809029560925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03563431b5dbdce4a80ecbb84bca2307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Player
 --- !u!114 &4473974347331829618
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -81,8 +81,6 @@ public class Transition : MonoBehaviour
 
     private void TeleportTo()
     {
-        Vector3 teleportLocation = teleportTo.transform.localPosition;
-
         player.transform.localPosition = teleportTo.transform.position;
     }
 }

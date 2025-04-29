@@ -4,10 +4,13 @@ public class FollowStop : MonoBehaviour
 {
     public GameObject target;
     private NpcToPlayer NpcScript;
+    private InventoryManager inventoryManager;
     private Animator animator;
 
     private void Start()
     {
+        NpcScript = this.gameObject.GetComponent<NpcToPlayer>();
+        inventoryManager = GameObject.FindWithTag("GameController").GetComponent<InventoryManager>();
         animator = GetComponent<Animator>();
     }
 
@@ -15,7 +18,6 @@ public class FollowStop : MonoBehaviour
     {
         if (col.gameObject == target)
         {
-            NpcScript = this.gameObject.GetComponent<NpcToPlayer>();
             NpcScript.enabled = false;
 
             animator.SetBool("IsWalking", false);
@@ -26,10 +28,34 @@ public class FollowStop : MonoBehaviour
     {
         if (col.gameObject == target)
         {
-            NpcScript = this.gameObject.GetComponent<NpcToPlayer>();
             NpcScript.enabled = true;
 
             animator.SetBool("IsWalking", true);
+        }
+    }
+    private void Update()
+    {
+        if (NpcScript.enabled == false)
+        {
+            if (NpcScript.needsFood == true)
+            {
+                Item foodItem = inventoryManager.GetSelectedItem(false);
+
+                if ((foodItem != null) && (foodItem.name == NpcScript.foodReq))
+                {
+                    NpcScript.isHolding = true;
+                }
+
+                else if ((foodItem == null) || (foodItem.name != NpcScript.foodReq))
+                {
+                    NpcScript.isHolding = false;
+                }
+            }
+
+            else
+            {
+                NpcScript.isHolding = false;
+            }
         }
     }
 }
