@@ -1,0 +1,12 @@
+{
+   "Name": "Renny's Raccoon Children",
+   "Author": "Renny",
+   "Version": "1.1.0",
+   "Description": "Makes your child a raccoon",
+   "UniqueID": "renny.raccoonchild",
+   "UpdateKeys": ["Nexus:2469"], // when you release to Nexus, change this to the Nexus ID in the URL like "UpdateKeys": ["Nexus:9999"]
+   "MinimumApiVersion": "2.5",
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}

@@ -1,0 +1,72 @@
+{
+  "Format": "2.0",
+  "Changes": [
+    {
+      "Target": "Data/Pets",
+      "Action": "EditData",
+      "TargetField": ["Cat", "Breeds"],
+      "Entries": {
+        "{{ModId}}.Cat": {
+          "Id": "{{ModId}}.Cat",
+          "Texture": "Mods/{{ModId}}/Cat",
+          "IconTexture": "Mods/{{ModId}}/Icons",
+          "IconSourceRect": {
+            "X": 0, "Y": 0, "Width": 16, "Height": 16
+          },
+          "BarkOverride": null,
+          "VoicePitch": 1.25
+        },
+        "{{ModId}}.CatTeddy": {
+          "Id": "{{ModId}}.CatTeddy",
+          "Texture": "Mods/{{ModId}}/CatTeddy",
+          "IconTexture": "Mods/{{ModId}}/Icons",
+          "IconSourceRect": {
+            "X": 16, "Y": 0, "Width": 16, "Height": 16
+          },
+          "BarkOverride": null,
+          "VoicePitch": 1.25
+        },
+        "{{ModId}}.CatCalico": {
+          "Id": "{{ModId}}.CatCalico",
+          "Texture": "Mods/{{ModId}}/CatCalico",
+          "IconTexture": "Mods/{{ModId}}/Icons",
+          "IconSourceRect": {
+            "X": 32, "Y": 0, "Width": 16, "Height": 16
+          },
+          "BarkOverride": null,
+          "VoicePitch": 1.25
+        },
+        "{{ModId}}.CatMidnight": {
+          "Id": "{{ModId}}.CatMidnight",
+          "Texture": "Mods/{{ModId}}/CatMidnight",
+          "IconTexture": "Mods/{{ModId}}/Icons",
+          "IconSourceRect": {
+            "X": 48, "Y": 0, "Width": 16, "Height": 16
+          },
+          "BarkOverride": null,
+          "VoicePitch": 1.25
+        },
+        "{{ModId}}.CatCheeseburger": {
+          "Id": "{{ModId}}.CatCheeseburger",
+          "Texture": "Mods/{{ModId}}/CatCheeseburger",
+          "IconTexture": "Mods/{{ModId}}/Icons",
+          "IconSourceRect": {
+            "X": 64, "Y": 0, "Width": 16, "Height": 16
+          },
+          "BarkOverride": null,
+          "VoicePitch": 1.25
+        }
+      }
+    },
+    {
+      "Target": "Mods/{{ModId}}/Cat, Mods/{{ModId}}/CatTeddy, Mods/{{ModId}}/CatCalico, Mods/{{ModId}}/CatMidnight, Mods/{{ModId}}/CatCheeseburger",
+      "Action": "Load",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Target": "Mods/{{ModId}}/Icons",
+      "Action": "Load",
+      "FromFile": "assets/icons.png"
+    }
+  ]
+}

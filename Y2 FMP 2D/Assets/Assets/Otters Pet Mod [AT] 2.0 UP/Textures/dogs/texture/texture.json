@@ -1,0 +1,407 @@
+{
+  "ItemName": "Dog",
+  "Type": "Character",
+  "TextureWidth": 128,
+  "TextureHeight": 288,
+  "ManualVariations": [
+	{
+      "Id": 0,
+      "ChanceWeight": 0.1,
+	  "Name": "Airdale",
+	  "Keywords": [ "Airdale" ]
+    },
+	{
+      "Id": 1,
+      "ChanceWeight": 0.1,
+	  "Name": "Australian Shepard",
+	  "Keywords": [ "Australian Shepard" ]
+    },
+	{
+      "Id": 2,
+      "ChanceWeight": 0.1,
+      "Name": "Beagle",
+	  "Keywords": [ "Beagle" ]
+    },
+    {
+      "Id": 3,
+      "ChanceWeight": 0.1,
+	  "Name": "Bernese",
+	  "Keywords": [ "Bernese" ]
+    },
+	{
+      "Id": 4,
+      "ChanceWeight": 0.1,
+      "Name": "Black Border Collie",
+	  "Keywords": [ "Black Border Collie" ]
+   },
+	{
+      "Id": 5,
+      "ChanceWeight": 0.1,
+      "Name": "Black Husky",
+	  "Keywords": [ "Black Husky" ]
+    },
+	{
+      "Id": 6,
+      "ChanceWeight": 0.1,
+      "Name": "Black Lab",
+	  "Keywords": [ "Black Lab" ]
+    },
+	{
+      "Id": 7,
+      "ChanceWeight": 0.1,
+      "Name": "Borzoi",
+	  "Keywords": [ "Borzoi" ]
+   },
+	{
+      "Id": 8,
+      "ChanceWeight": 0.1,
+      "Name": "Brown Border Collie",
+	  "Keywords": [ "Brown Border Collie" ]
+   },
+	{
+      "Id": 9,
+      "ChanceWeight": 0.1,
+      "Name": " Brown Bull Terrier",
+	  "Keywords": [ " Brown Bull Terrier" ]
+   },
+	{
+      "Id": 10,
+      "ChanceWeight": 0.1,
+      "Name": "Bull dog",
+	  "Keywords": [ "Bull dog" ]
+    },
+{
+      "Id": 11,
+      "ChanceWeight": 0.1,
+      "Name": "Chocolate Doberman",
+	  "Keywords": [ "Chocolate Doberman" ]
+    },
+{
+      "Id": 12,
+      "ChanceWeight": 0.1,
+      "Name": "Chocolate Lab",
+	  "Keywords": [ "Chocolate Lab" ]
+    },
+{
+      "Id": 13,
+      "ChanceWeight": 0.1,
+      "Name": "Chow Chow",
+	  "Keywords": [ "Chow Chow" ]
+    },
+{
+      "Id": 14,
+      "ChanceWeight": 0.1,
+      "Name": "Dark German Shepard",
+	  "Keywords": [ "Dark German Shepard" ]
+    },
+{
+      "Id": 15,
+      "ChanceWeight": 0.1,
+      "Name": "Doberman",
+	  "Keywords": [ "Doberman" ]
+    },
+{
+      "Id": 16,
+      "ChanceWeight": 0.1,
+      "Name": "Original 1",
+	  "Keywords": [ "Original 1" ]
+    },
+{
+      "Id": 17,
+      "ChanceWeight": 0.1,
+      "Name": "Original 2",
+	  "Keywords": [ "Original 2" ]
+    },
+{
+      "Id": 18,
+      "ChanceWeight": 0.1,
+      "Name": "Original 3",
+	  "Keywords": [ "Original 3" ]
+    },
+{
+      "Id": 19,
+      "ChanceWeight": 0.1,
+      "Name": "German Shepard",
+	  "Keywords": [ "German Shepard" ]
+    },
+{
+      "Id": 20,
+      "ChanceWeight": 0.1,
+      "Name": "Golden Retreiver",
+	  "Keywords": [ "Golden Retreiver" ]
+    },
+{
+      "Id": 21,
+      "ChanceWeight": 0.1,
+      "Name": "Gray Husky",
+	  "Keywords": [ "Gray Husky" ]
+    },
+{
+      "Id": 22,
+      "ChanceWeight": 0.1,
+      "Name": "Irish Red Setter",
+	  "Keywords": [ "Irish red Setter" ]
+    },
+{
+      "Id": 23,
+      "ChanceWeight": 0.1,
+      "Name": "Irish Wolfhound",
+	  "Keywords": [ "Irish Wolfhound" ]
+    },
+{
+      "Id": 24,
+      "ChanceWeight": 0.1,
+      "Name": "Jack Russell",
+	  "Keywords": [ "Jack Russel" ]
+    },
+{
+      "Id": 25,
+      "ChanceWeight": 0.1,
+      "Name": "Mo",
+	  "Keywords": [ "Mo" ]
+    },
+{
+      "Id": 26,
+      "ChanceWeight": 0.1,
+      "Name": "Newfoundland",
+	  "Keywords": [ "Newfoundland" ]
+    },
+{
+      "Id": 27,
+      "ChanceWeight": 0.1,
+      "Name": "Old English Sheepdog",
+	  "Keywords": [ "Irish Wolfhound" ]
+    },
+{
+      "Id": 28,
+      "ChanceWeight": 0.1,
+      "Name": "Red Husky",
+	  "Keywords": [ "Red Husky" ]
+    },
+{
+      "Id": 29,
+      "ChanceWeight": 0.1,
+      "Name": "Samoyed",
+	  "Keywords": [ "Samoyed" ]
+    },
+{
+      "Id": 30,
+      "ChanceWeight": 0.1,
+      "Name": "st Bernard",
+	  "Keywords": [ "st Bernard" ]
+    },
+{
+      "Id": 31,
+      "ChanceWeight": 0.1,
+      "Name": "White bull terrier",
+	  "Keywords": [ "White bull terrier" ]
+    },
+{
+      "Id": 32,
+      "ChanceWeight": 0.1,
+      "Name": "Yellow Lab",
+	  "Keywords": [ "Yellow Lab" ]
+    },
+//FERRETS//
+{
+      "Id": 33,
+      "ChanceWeight": 0.1,
+	  "Name": "Albino ferret",
+	  "Keywords": [ "Albino ferret" ]
+    },
+	{
+      "Id": 34,
+      "ChanceWeight": 0.1,
+	  "Name": "Black and White Ferret",
+	  "Keywords": [ "Black and White Ferret" ]
+    },
+	{
+      "Id": 35,
+      "ChanceWeight": 0.1,
+      "Name": "Champagne ferret",
+	  "Keywords": [ "Champagne ferret" ]
+    },
+    {
+      "Id": 36,
+      "ChanceWeight": 0.1,
+	  "Name": "Chocolate ferret",
+	  "Keywords": [ "Chocolate ferret" ]
+    },
+	{
+      "Id": 37,
+      "ChanceWeight": 0.1,
+      "Name": "Cinnamon ferret",
+	  "Keywords": [ "Cinnamon ferret" ]
+   },
+	{
+      "Id": 38,
+      "ChanceWeight": 0.1,
+      "Name": "Clyde",
+	  "Keywords": [ "Clyde" ]
+    },
+	{
+      "Id": 39,
+      "ChanceWeight": 0.1,
+      "Name": "Gray and Black Ferret",
+	  "Keywords": [ "Gray and Black Ferret" ]
+    },
+	{
+      "Id": 40,
+      "ChanceWeight": 0.1,
+      "Name": "Gray Ferret",
+	  "Keywords": [ "Gray Ferret" ]
+   },
+	{
+      "Id": 41,
+      "ChanceWeight": 0.1,
+      "Name": "Sable Ferret",
+	  "Keywords": [ " Sable Ferret" ]
+   },
+	{
+      "Id": 42,
+      "ChanceWeight": 0.1,
+      "Name": "White Ferret",
+	  "Keywords": [ "White Ferret" ]
+    },
+//HAMSTERS//
+{
+      "Id": 43,
+      "ChanceWeight": 0.1,
+	  "Name": "Black Banded hamster",
+	  "Keywords": [ "Black Banded hamster" ]
+    },
+	{
+      "Id": 44,
+      "ChanceWeight": 0.1,
+	  "Name": "Black Hamster",
+	  "Keywords": [ "Black Hamster" ]
+    },
+	{
+      "Id": 45,
+      "ChanceWeight": 0.1,
+      "Name": "Chocolate Banded Hamster",
+	  "Keywords": [ "Chocolate Banded Hamster" ]
+    },
+    {
+      "Id": 46,
+      "ChanceWeight": 0.1,
+	  "Name": "Chocolate Hamster",
+	  "Keywords": [ "Chocolate Hamster" ]
+    },
+	{
+      "Id": 47,
+      "ChanceWeight": 0.1,
+      "Name": "Gold and White Hamster",
+	  "Keywords": [ "Gold and White Hamster" ]
+   },
+	{
+      "Id": 48,
+      "ChanceWeight": 0.1,
+      "Name": "Golden Hamster",
+	  "Keywords": [ "Golden Hamster" ]
+    },
+	{
+      "Id": 49,
+      "ChanceWeight": 0.1,
+      "Name": "Gray and White Hamster",
+	  "Keywords": [ "Gray and White Hamster" ]
+    },
+	{
+      "Id": 50,
+      "ChanceWeight": 0.1,
+      "Name": "Gray Hamster",
+	  "Keywords": [ "Gray Hamster" ]
+   },
+	{
+      "Id": 51,
+      "ChanceWeight": 0.1,
+      "Name": "Spotted White hamster",
+	  "Keywords": [ " Spotted White hamster" ]
+   },
+	{
+      "Id": 52,
+      "ChanceWeight": 0.1,
+      "Name": "White Hamster",
+	  "Keywords": [ "White Hamster" ]
+    },
+//GUINEA PIGS//
+{
+      "Id": 53,
+      "ChanceWeight": 0.1,
+	  "Name": "Brown and White Guinea Pig",
+	  "Keywords": [ "Brown and White Guinea Pig" ]
+    },
+	{
+      "Id": 54,
+      "ChanceWeight": 0.1,
+	  "Name": "Gray and White Guinea Pig",
+	  "Keywords": [ "Gray and white Guinea Pig" ]
+    },
+	{
+      "Id": 55,
+      "ChanceWeight": 0.1,
+      "Name": "Long-Haired Guinea Pig",
+	  "Keywords": [ "Long-Haired Guinea Pig" ]
+    },
+    {
+      "Id": 56,
+      "ChanceWeight": 0.1,
+	  "Name": "Patched Guinea Pig",
+	  "Keywords": [ "Patched Guinea Pig" ]
+    },
+	{
+      "Id": 57,
+      "ChanceWeight": 0.1,
+      "Name": "White Guinea Pig",
+	  "Keywords": [ "White Guinea Pig" ]
+   },
+//CHINCHILLA//
+	{
+      "Id": 58,
+      "ChanceWeight": 0.1,
+      "Name": "Blck Chinchilla",
+	  "Keywords": [ "Black Chinchilla" ]
+    },
+	{
+      "Id": 59,
+      "ChanceWeight": 0.1,
+      "Name": "Gray Chinchilla",
+	  "Keywords": [ "Gray Chinchilla" ]
+    },
+	{
+      "Id": 60,
+      "ChanceWeight": 0.1,
+      "Name": "Marbled Chinchilla",
+	  "Keywords": [ "Marbled Chinchilla" ]
+   },
+	{
+      "Id": 61,
+      "ChanceWeight": 0.1,
+      "Name": "White Chinchilla",
+	  "Keywords": [ " White Chinchilla" ]
+
+    },
+	{
+      "Id": 62,
+      "ChanceWeight": 0.1,
+      "Name": "Original Dog",
+	  "Keywords": [ " Original Dog" ]
+
+    },
+	{
+      "Id": 63,
+      "ChanceWeight": 0.1,
+      "Name": "Original Dog",
+	  "Keywords": [ " Original Dog" ]
+
+    },
+	{
+      "Id": 64,
+      "ChanceWeight": 0.1,
+      "Name": "Original Dog",
+	  "Keywords": [ " Original Dog" ]
+
+    },
+
+	]
+}
