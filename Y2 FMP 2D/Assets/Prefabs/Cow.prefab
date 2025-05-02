@@ -36,7 +36,8 @@ Transform:
   m_LocalPosition: {x: -74.2, y: 195.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7005468551939379495}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8309128163574623436
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4412161323009488022, guid: 61703271dbf648d4f90afc6fff389a86, type: 3}
+  m_Sprite: {fileID: -7609185963259678837, guid: 3b095eab86dfaf34884c803cfb4f48d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,7 +105,7 @@ Animator:
   m_GameObject: {fileID: 2531131809029560925}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d1170e9e96665904b82648826fb3a276, type: 2}
+  m_Controller: {fileID: 9100000, guid: c905963d4bd10544fb448ba20b1d1e10, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -249,3 +250,75 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: -2
   runOnlyOnce: 0
+--- !u!1 &7650087167563073380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7005468551939379495}
+  - component: {fileID: 3863418334225288049}
+  m_Layer: 19
+  m_Name: CowVariants
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7005468551939379495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7650087167563073380}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8744639403447057211}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3863418334225288049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7650087167563073380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fb9094d601c0d4e8173297bda90475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variantType:
+  - {fileID: 9100000, guid: 53066c13b6893b94297398e6bcfa0248, type: 2}
+  - {fileID: 9100000, guid: 5607b4a809693c248914f30c8c571ee7, type: 2}
+  - {fileID: 9100000, guid: 52d5d9b7d00f3cd408e5939e4adee23c, type: 2}
+  - {fileID: 9100000, guid: ecb60154ed738c84097858b378247ea9, type: 2}
+  - {fileID: 9100000, guid: 741090baa6711a446ba06aea38308318, type: 2}
+  - {fileID: 9100000, guid: 991c09b84c13a3c4287f2aa3be63207c, type: 2}
+  - {fileID: 9100000, guid: 0f6df3b292a99914fb9f5f7d21f2ea8f, type: 2}
+  - {fileID: 9100000, guid: f4836d8e1d896c54dac18dadfd72eae4, type: 2}
+  - {fileID: 9100000, guid: 834dc9e6146e71743b64ede7d0eb964c, type: 2}
+  - {fileID: 9100000, guid: c7480b3f9e4463c49b54be9d6d18dce1, type: 2}
+  - {fileID: 9100000, guid: aebeaa2c608b2b64b9f469adb26f6266, type: 2}
+  - {fileID: 9100000, guid: 5059b60a33468b24bbbd193b24aec3e6, type: 2}
+  - {fileID: 9100000, guid: d8c58917bcd889c439e8d8470243b3b1, type: 2}
+  - {fileID: 9100000, guid: 0ad49ea6283067f489cd31cdc02ad6ff, type: 2}
+  - {fileID: 9100000, guid: cc0c74d9c2cb358429082e82f0c91b6a, type: 2}
+  - {fileID: 9100000, guid: ad4178a2c334c8c42afaae6c3e836652, type: 2}
+  - {fileID: 9100000, guid: eac4dac512e887b4d87f7247841e500e, type: 2}
+  - {fileID: 9100000, guid: 6ddb5298b34f8fa4596718085678bb9d, type: 2}
+  - {fileID: 9100000, guid: d448903a330c10e4fa1fe08054794035, type: 2}
+  - {fileID: 9100000, guid: 43c564bcabfa69648b0c005f280ea0b1, type: 2}
+  - {fileID: 9100000, guid: 341f1efb35412324b9d33617c6653c49, type: 2}
+  - {fileID: 9100000, guid: fedf87f77a5283448a3868154e1be00c, type: 2}
+  - {fileID: 9100000, guid: f7f867aa60a1e7842a99ff68afc6442f, type: 2}
+  - {fileID: 9100000, guid: 92b9b44ef8181fb43aedcc61b1ff23a1, type: 2}
+  - {fileID: 9100000, guid: 26c073e61be538c4caf2875398556bcd, type: 2}
+  - {fileID: 9100000, guid: e90753fc32250c6449e93a23abfa332a, type: 2}
+  - {fileID: 9100000, guid: c905963d4bd10544fb448ba20b1d1e10, type: 2}

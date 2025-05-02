@@ -1,0 +1,391 @@
+{
+    "Format": "2.0.0",
+	"Changes": [
+	
+	{
+		"LogName": "Load assets",
+			"Action": "Load",
+			"Target": "assets/pigeon, assets/racingpigeon, assets/pioneerpigeon, assets/modenapigeon, assets/whitedove, assets/mourningdove, assets/Babypigeon, assets/Babymodenapigeon, assets/Babywhitedove, assets/pigeonshop_icon, assets/pigeonegg, assets/pigeonsurprise, assets/dropping",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+    {
+      "Action": "Include",
+      "FromFile": "Data/gifttastes.json, Data/machines.json"
+  },
+		{
+    "LogName": "Animal Data",
+    "Action": "EditData",
+    "Target": "Data/FarmAnimals",
+"Entries": {
+  "pigeon": {
+    "DisplayName": "Pigeon",
+    "House": "Coop",
+    "PurchasePrice": 2500,
+    "SellPrice": 600,
+    "ShopTexture": "assets/pigeonshop_icon",
+    "ShopSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 32,
+            "Height": 16
+          },
+    "ShopDisplayName": "Pigeon",
+    "ShopDescription": "These pigeons will leave eggs for you every day once grown!",
+    "RequiredBuilding": "Deluxe Coop",
+    "AlternatePurchaseTypes": [
+      {
+          "Condition": null,
+          "AnimalIds": [
+              "pigeon",
+              "Racing Pigeon",
+              "Pioneer Pigeon",
+              "Modena Pigeon",
+              "Mourning Dove",
+              "White Dove"
+          ]
+      }
+    ],
+    "EggItemIds": [
+      "pigeonEgg"
+    ],
+    "BirthText": "A new Pigeon chick hatched!",
+    "DaysToMature": 2,
+    "DaysToProduce": 2,
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "ItemId": "pigeonEgg"
+      },
+      {
+        "Id": "Default",
+        "ItemId": "pigeonManure"
+      }
+    ],
+    "DeluxeProduceMinimumFriendship": 500,
+    "DeluxeProduceLuckMultiplier": 1.01,
+    "ProfessionForQualityBoost": 2,
+    "Sound": "{{ModId}}_Sound",
+    "BabySound": "SpringBirds",
+    "Texture": "assets/pigeon",
+    "BabyTexture": "assets/Babypigeon",
+    "HappinessDrain": 3,
+    "StatToIncrementOnProduce": [
+      {
+        "RequiredItemId": null,
+        "RequiredTags": [
+          "egg_item"
+        ],
+        "StatName": "DuckEggsLayed"
+      }
+    ],
+    "ShowInSummitCredits": true
+                },
+
+                "Modena Pigeon": {
+                  "DisplayName": "Modena Pigeon",
+                  "House": "Coop",
+                  "RequiredBuilding": "Deluxe Coop",
+                  "EggItemIds": [
+                    "pigeonEgg"
+                  ],
+                  "BirthText": "A new Modena Pigeon chick hatched!",
+                  "DaysToMature": 2,
+                  "DaysToProduce": 2,
+                  "ProduceItemIds": [
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonEgg"
+                    },
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonManure"
+                    }
+                  ],
+                  "DeluxeProduceMinimumFriendship": 500,
+                  "DeluxeProduceLuckMultiplier": 1.01,
+                  "ProfessionForQualityBoost": 2,
+                  "Sound": "{{ModId}}_Sound",
+                  "BabySound": "SpringBirds",
+                  "Texture": "assets/modenapigeon",
+                  "BabyTexture": "assets/Babymodenapigeon",
+                  "HappinessDrain": 3,
+                  "StatToIncrementOnProduce": [
+                    {
+                      "RequiredItemId": null,
+                      "RequiredTags": [
+                        "egg_item"
+                      ],
+                      "StatName": "DuckEggsLayed"
+                    }
+                  ],
+                  "ShowInSummitCredits": true
+                              },
+
+                  "Racing Pigeon": {
+                  "DisplayName": "Racing Pigeon",
+                  "House": "Coop",
+                  "RequiredBuilding": "Deluxe Coop",
+                  "EggItemIds": [
+                    "pigeonEgg"
+                  ],
+                  "BirthText": "A new Racing Pigeon chick hatched!",
+                  "DaysToMature": 2,
+                  "DaysToProduce": 2,
+                  "ProduceItemIds": [
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonEgg"
+                    },
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonManure"
+                    }
+                  ],
+                  "DeluxeProduceMinimumFriendship": 500,
+                  "DeluxeProduceLuckMultiplier": 1.01,
+                  "ProfessionForQualityBoost": 2,
+                  "Sound": "{{ModId}}_Sound",
+                  "BabySound": "SpringBirds",
+                  "Texture": "assets/racingpigeon",
+                  "BabyTexture": "assets/Babypigeon",
+                  "HappinessDrain": 3,
+                  "StatToIncrementOnProduce": [
+                    {
+                      "RequiredItemId": null,
+                      "RequiredTags": [
+                        "egg_item"
+                      ],
+                      "StatName": "DuckEggsLayed"
+                    }
+                  ],
+                  "ShowInSummitCredits": true
+                              },
+
+                "White Dove": {
+                  "DisplayName": "White Dove",
+                  "House": "Coop",
+                  "RequiredBuilding": "Deluxe Coop",
+                  "EggItemIds": [
+                    "pigeonEgg"
+                  ],
+                  "BirthText": "A new White Dove chick hatched!",
+                  "DaysToMature": 2,
+                  "DaysToProduce": 2,
+                  "ProduceItemIds": [
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonEgg"
+                    },
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonManure"
+                    }
+                  ],
+                  "DeluxeProduceItemIds": [
+                    {
+                      "Id": "Default",
+                      "MinimumFriendship": 500,
+                      "ItemId": "pigeonSurprise"
+                    }
+                  ],
+                  "DeluxeProduceMinimumFriendship": 500,
+                  "DeluxeProduceLuckMultiplier": 1.01,
+                  "ProfessionForQualityBoost": 2,
+                  "Sound": "{{ModId}}_Sound",
+                  "BabySound": "SpringBirds",
+                  "Texture": "assets/whitedove",
+                  "BabyTexture": "assets/Babywhitedove",
+                  "HappinessDrain": 3,
+                  "StatToIncrementOnProduce": [
+                    {
+                      "RequiredItemId": null,
+                      "RequiredTags": [
+                        "egg_item"
+                      ],
+                      "StatName": "DuckEggsLayed"
+                    }
+                  ],
+                  "ShowInSummitCredits": true
+                              },
+                
+                "Pioneer Pigeon": {
+                  "DisplayName": "Pioneer Pigeon",
+                  "House": "Coop",
+                  "RequiredBuilding": "Deluxe Coop",
+                  "EggItemIds": [
+                    "pigeonEgg"
+                  ],
+                  "BirthText": "A new Pioneer Pigeon chick hatched!",
+                  "DaysToMature": 2,
+                  "DaysToProduce": 2,
+                  "ProduceItemIds": [
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonEgg"
+                    },
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonManure"
+                    }
+                  ],
+                  "DeluxeProduceMinimumFriendship": 500,
+                  "DeluxeProduceLuckMultiplier": 1.01,
+                  "ProfessionForQualityBoost": 2,
+                  "Sound": "{{ModId}}_Sound",
+                  "BabySound": "SpringBirds",
+                  "Texture": "assets/pioneerpigeon",
+                  "BabyTexture": "assets/Babypigeon",
+                  "HappinessDrain": 3,
+                  "StatToIncrementOnProduce": [
+                    {
+                      "RequiredItemId": null,
+                      "RequiredTags": [
+                        "egg_item"
+                      ],
+                      "StatName": "DuckEggsLayed"
+                    }
+                  ],
+                  "ShowInSummitCredits": true
+                              },
+
+                  "Mourning Dove": {
+                  "DisplayName": "Mourning Pigeon",
+                  "House": "Coop",
+                  "RequiredBuilding": "Deluxe Coop",
+                  "EggItemIds": [
+                    "pigeonEgg"
+                  ],
+                  "BirthText": "A new Mourning Dove chick hatched!",
+                  "DaysToMature": 2,
+                  "DaysToProduce": 2,
+                  "ProduceItemIds": [
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonEgg"
+                    },
+                    {
+                      "Id": "Default",
+                      "ItemId": "pigeonManure"
+                    }
+                  ],
+                  "DeluxeProduceMinimumFriendship": 500,
+                  "DeluxeProduceLuckMultiplier": 1.01,
+                  "ProfessionForQualityBoost": 2,
+                  "Sound": "{{ModId}}_Sound",
+                  "BabySound": "SpringBirds",
+                  "Texture": "assets/mourningdove",
+                  "BabyTexture": "assets/Babypigeon",
+                  "HappinessDrain": 3,
+                  "StatToIncrementOnProduce": [
+                    {
+                      "RequiredItemId": null,
+                      "RequiredTags": [
+                        "egg_item"
+                      ],
+                      "StatName": "DuckEggsLayed"
+                    }
+                  ],
+                  "ShowInSummitCredits": true
+                              }
+            }
+            
+        },
+
+        //items 
+        { 
+            "LogName": "Item Data",      
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "pigeonEgg": {
+                    "Category": -5,
+                    "Description": "A tiny pigeon egg. Not worth of mayonese making.",
+                    "Displayname": "Pigeon Egg",
+                    "Price": 25,
+                    "Texture": "assets/pigeonegg",
+                    "Type": "Basic",
+                    "Edibility": 12,
+                    "ContextTags": [
+                      "color_sand",
+                      "pigeonEgg_item"
+                    ]
+                    }
+                }
+        },
+        { 
+          "LogName": "Item Data",      
+          "Action": "EditData",
+          "Target": "Data/Objects",
+          "Entries": {
+              "pigeonManure": {
+                "Category": -18,
+                  "Description": "It's poo. Handle with caution and use as a fertilizer.",
+                  "Displayname": "Pigeon Dropping",
+                  "Price": 0,
+                  "Texture": "assets/dropping",
+                  "Type": "Basic",
+                  "Edibility": -100
+                  }
+              }
+      },
+        { 
+            "LogName": "Item Data",      
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "pigeonSurprise": {
+                    "Category": -18,
+                    "Description": "The olive branch is an ancient symbol of peace. It will defend you agains even the most aggressive foes.",
+                    "Displayname": "Olive Branch",
+                    "Price": 500,
+                    "Texture": "assets/pigeonsurprise",
+                    "Type": "Basic",
+                    "Edibility": 12,
+                    "Buffs": [
+                      {
+                        "Id": "Peaceful Offering",
+                        "BuffId": null,
+                        "IconTexture": null,
+                        "IconSpriteIndex": 0,
+                        "Duration": 420,
+                        "IsDebuff": false,
+                        "GlowColor": null,
+                        "CustomAttributes": {
+                          "FarmingLevel": 0.0,
+                          "FishingLevel": 0.0,
+                          "MiningLevel": 0.0,
+                          "LuckLevel": 5.0,
+                          "ForagingLevel": 0.0,
+                          "MaxStamina": 0.0,
+                          "MagneticRadius": 0.0,
+                          "Speed": 0.0,
+                          "Defense": 10.0,
+                          "Attack": 0.0
+                        },
+                        "CustomFields": null,
+                        "ContextTags": [
+                          "color_green"
+                        ]
+                      }
+                    ]
+                    }
+                }
+        },
+
+
+            // add sound
+            {
+              "Action": "EditData",
+              "Target": "Data/AudioChanges",
+              "Entries": {
+                  "{{ModId}}_Sound": {
+                      "ID": "{{ModId}}_Sound",
+                      "Category": "Sound",
+                      "FilePaths": [ "{{AbsoluteFilePath: assets/pigeon1.wav}}", "{{AbsoluteFilePath: assets/pigeon2.wav}}", "{{AbsoluteFilePath: assets/pigeon3.wav}}" ],
+                      "StreamedVorbis": false
+                  }
+              }
+          }
+    ]
+}
+

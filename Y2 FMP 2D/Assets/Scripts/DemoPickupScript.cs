@@ -6,6 +6,7 @@ public class DemoPickupScript : MonoBehaviour
     public Item[] itemsToPickup;
     public GameObject prefabChick;
     public GameObject spawnTarget;
+    public GameObject prefabEgg;
 
     public void PickupItem(int id)
     {
@@ -48,5 +49,10 @@ public class DemoPickupScript : MonoBehaviour
     public void SPAWNCHICKEN()
     {
         Instantiate(prefabChick, spawnTarget.transform.position, Quaternion.identity);
+    }
+
+    public void SPAWNEGG()
+    {
+        Instantiate(prefabEgg, spawnTarget.transform.position, Quaternion.identity);
     }
 }

@@ -1,0 +1,35 @@
+{
+    "Changes": [
+        // add gift tastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Like"],
+                    "Value": "pigeonSurprise", 
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Dislike"],
+                    "Value": "pigeonEgg", 
+                    "Delimiter": " "
+                },
+                {
+                  "Operation": "Append",
+                  "Target": ["Entries", "Universal_Hate"],
+                  "Value": "pigeonManure", 
+                  "Delimiter": " "
+              },
+              {
+                "Operation": "Append",
+                "Target": ["Fields", "Leo", 0],
+                "Value": "pigeonEgg", 
+                "Delimiter": " "
+            }
+            ]
+        }
+    ]
+}

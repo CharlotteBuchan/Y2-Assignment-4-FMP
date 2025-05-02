@@ -11,8 +11,13 @@ public class EggProcess : MonoBehaviour
     [SerializeField] SpriteRenderer pulseOverlay;
     private Color oldCol;
     private Color newCol;
+    [SerializeField] private GameObject chickPrefab;
+    [SerializeField] private AudioSource eggPop;
+
     void Start()
     {
+        eggPop.Play();
+
         timer = 5f;
         isDone = false;
 
@@ -69,22 +74,39 @@ public class EggProcess : MonoBehaviour
             t++;
         }
 
+        StartCoroutine(Hatch(1f));
         Debug.Log("Done");
     }
-    private IEnumerator PulsateDown(float time)
+
+    private IEnumerator Hatch(float time)
     {
         float i = 0;
         float rate = 1 / time;
 
+        i = 0;
+        rate = 1 / time;
+
+        Vector3 oldSize = this.transform.localScale;
+        Vector3 newSize = new Vector3(3, 3, 3);
+
         while (i < 1)
         {
-            Debug.Log("Start While");
+            Debug.Log("HATCHINGGGGGGG");
             i += Time.deltaTime * rate;
-            pulseOverlay.color = Color.Lerp(newCol, oldCol, i);
-            Debug.Log("End While");
+            this.transform.localScale = Vector3.Lerp(oldSize, newSize, i);
+            pulseOverlay.color = Color.Lerp(oldCol, newCol, i);
             yield return 0;
         }
-        Debug.Log("Done");
 
+        eggPop.Play();
+
+        GameObject newChick = Instantiate(chickPrefab, this.transform.position, Quaternion.identity);
+
+        while (eggPop.isPlaying == true)
+        {
+            yield return 0;
+        }
+
+        Destroy(this.gameObject);
     }
 }

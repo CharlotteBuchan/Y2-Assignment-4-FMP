@@ -1,0 +1,321 @@
+{
+  "Format": "2.0.0",
+
+  "Changes": [
+
+
+
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+
+        "MermaidOtterPig": {
+          "DisplayName": "Otter",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": 4000,
+          "SellPrice": 8000,
+          "ShopTexture": "Mods/ApryllForever.RiseMermaids/MermaidOtterFace",
+          "ShopSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+          },
+          "ShopDisplayName": "Otter",
+          "ShopDescription": "A cute little otter!!!",
+          "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5950]",
+          "RequiredBuilding": "Barn",
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "During the night, a wee baby otter girl was born!",
+          "DaysToMature": 10,
+          "CanGetPregnant": true,
+          "DaysToProduce": 1,
+
+          "HarvestType": "DigUp",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "397" //Sea Urchin
+            },
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "138" //Rainbow Trout
+            },
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "560" //Ocean Stone
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "394" //Rainbow Shell
+            },
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "139" //Salmon
+            },
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "565" //Fire Opal
+            }
+          ],
+
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "ProfessionForHappinessBoost": 3,
+          "ProfessionForQualityBoost": 3,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "dustMeep",
+          "BabySound": "junimoMeep1",
+
+          "Texture": "Mods/ApryllForever.RiseMermaids/MermaidOtter",
+          "HarvestedTexture": null,
+          "BabyTexture": "Mods/ApryllForever.RiseMermaids/MermaidOtterBaby",
+
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": {
+            "Visible": false
+          },
+          "ShadowWhenBaby": {
+            "Visible": false
+          },
+          "ShadowWhenAdultSwims": {
+            "Visible": false
+          },
+          "ShadowWhenAdult": {
+            "Visible": false
+          },
+          "CanSwim": true,
+          "SwimOffset": {
+            "X": 0,
+            "Y": 160
+          },
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 5,
+          "UpDownPetHitboxTileSize": "1.5, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": [
+            {
+              "RequiredItemId": "(O)394",
+              "RequiredTags": null,
+              "StatName": "TasteTheOtterRainbow"
+            }
+          ],
+          "ShowInSummitCredits": true,
+          "CustomFields": {}
+        }
+      }
+    },
+
+
+    {
+      "Action": "Load",
+      "FromFile": "Assets/MermaidOtter.png",
+      "Target": "Mods/ApryllForever.RiseMermaids/MermaidOtter"
+    },
+    {
+      "Action": "Load",
+      "FromFile": "Assets/MermaidOtterBaby.png",
+      "Target": "Mods/ApryllForever.RiseMermaids/MermaidOtterBaby"
+    },
+
+    {
+      "Action": "Load",
+      "FromFile": "Assets/MermaidOtterFace.png",
+      "Target": "Mods/ApryllForever.RiseMermaids/MermaidOtterFace"
+    },
+    /*
+    *
+    * Otter Coop Failing due to pathfinding issues.
+    *
+
+    {
+      "Action": "Load",
+      "FromFile": "Assets/OtterCoop.png",
+      "Target": "Buildings/OtterCoop"
+    },
+
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Entries": {
+
+        "Otter Shack": {
+          "Name": "Otter Shack",
+          "Description": "A special, comfortable place for your otters to live, to grow, and to enterrain guests!",
+          "Texture": "Buildings\\OtterCoop",
+          "Skins": [],
+          "DrawShadow": true,
+          "UpgradeSignTile": "2, 2",
+          "UpgradeSignHeight": 18.0,
+          "Size": {
+            "X": 6,
+            "Y": 3
+          },
+          "FadeWhenBehind": true,
+          "SourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 96,
+            "Height": 112
+          },
+          "SeasonOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "DrawOffset": "0, 0",
+          "SortTileOffset": 0.0,
+          "CollisionMap": null,
+          "AdditionalPlacementTiles": null,
+          "BuildingType": null,
+          "Builder": "Robin",
+          "BuildCondition": null,
+          "BuildDays": 3,
+          "BuildCost": 4000,
+          "BuildMaterials": [
+            {
+              "ItemId": "(O)388",
+              "Amount": 300
+            },
+            {
+              "ItemId": "(O)390",
+              "Amount": 100
+            }
+          ],
+          "BuildingToUpgrade": null,
+          "MagicalConstruction": false,
+          "BuildMenuDrawOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "HumanDoor": {
+            "X": 1,
+            "Y": 2
+          },
+          "AnimalDoor": {
+            "X": 2,
+            "Y": 2,
+            "Width": 2,
+            "Height": 1
+          },
+          "AnimalDoorOpenDuration": 0.3125,
+          "AnimalDoorOpenSound": "doorCreak",
+          "AnimalDoorCloseDuration": 0.3125,
+          "AnimalDoorCloseSound": "doorCreakReverse",
+          "NonInstancedIndoorLocation": null,
+          "IndoorMap": "Barn3",
+          "IndoorMapType": "StardewValley.AnimalHouse",
+          "MaxOccupants": 11,
+          "ValidOccupantTypes": [
+             "Otter Shack"
+          ],
+          "AllowAnimalPregnancy": true,
+          "IndoorItemMoves": null,
+          "IndoorItems": [
+            {
+              "Id": "Default_FeedHopper",
+              "ItemId": "(BC)99",
+              "Tile": {
+                "X": 6,
+                "Y": 3
+              },
+              "Indestructible": true
+            }
+          ],
+          "AddMailOnBuild": null,
+          "Metadata": {},
+          "ModData": {},
+          "HayCapacity": 0,
+          "Chests": null,
+          "DefaultAction": null,
+          "AdditionalTilePropertyRadius": 0,
+          "ActionTiles": [],
+          "TileProperties": [],
+          "ItemConversions": null,
+          "DrawLayers": [
+            {
+              "Id": "Default_AnimalDoor",
+              "Texture": null,
+              "SourceRect": {
+                "X": 0,
+                "Y": 112,
+                "Width": 32,
+                "Height": 16
+              },
+              "DrawPosition": "32, 96",
+              "DrawInBackground": false,
+              "SortTileOffset": 0.02,
+              "OnlyDrawIfChestHasContents": null,
+              "FrameDuration": 90,
+              "FrameCount": 1,
+              "FramesPerRow": -1,
+              "AnimalDoorOffset": {
+                "X": 0,
+                "Y": -13
+              }
+            },
+            {
+              "Id": "Default_AnimalDoor_Open",
+              "Texture": null,
+              "SourceRect": {
+                "X": 32,
+                "Y": 112,
+                "Width": 32,
+                "Height": 16
+              },
+              "DrawPosition": "32, 96",
+              "DrawInBackground": false,
+              "SortTileOffset": 1.0,
+              "OnlyDrawIfChestHasContents": null,
+              "FrameDuration": 90,
+              "FrameCount": 1,
+              "FramesPerRow": -1,
+              "AnimalDoorOffset": {
+                "X": 0,
+                "Y": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        }
+      }
+    }
+
+  */
+
+  ]
+}//Apryll

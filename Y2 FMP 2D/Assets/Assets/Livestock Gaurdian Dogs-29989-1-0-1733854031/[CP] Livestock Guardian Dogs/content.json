@@ -1,0 +1,1545 @@
+{
+    "Format": "2.4.0",
+	
+
+    "Changes": [
+		
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/Dogicon",
+			"FromFile": "assets/Dogicon.png"
+		},
+		//Dog Sound 
+        {
+        "Action": "EditData",
+        "Target": "Data/AudioChanges",
+        "Entries": {
+        "Bark": {
+            "Id": "Dogbark",
+            "Category": "Sound",
+            "FilePaths": [
+                "{{AbsoluteFilePath: assets/bigdog.wav}}",
+            ],
+			"Looped": false,
+            "StreamedVorbis": false
+                     } 
+	                }
+	    },
+		//Dog Sound End
+		
+		//Default White Pyrenes 
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/pyrenes_blonde_baby, assets/pyrenes_blonde",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Great Pyrenes": {
+                    "DisplayName": "Great Pyrenes",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+                    "PurchasePrice": 5000,
+                    "SellPrice": 15000,
+                    "ShopTexture": "assets/Dogicon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+				
+	//All Breeds		
+				
+	"AlternatePurchaseTypes": [
+      {
+        "Condition": null,
+        "AnimalIds": [
+          "Bernese Mountain Dog",
+		  "Blue Heeler",
+		  "Blonde Heeler",
+		  "Blonde Mutt",
+		  "Brown Mutt",
+		  "White Shepherd",
+		  "Brown Shepherd",
+		  "Blue Aussie",
+		  "Black Aussie",
+		  "Blonde Aussie",
+		  "Blue Border Collie",
+		  "Black Border Collie",
+		  "Blonde Border Collie",
+        ]
+      }
+    ],
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "2",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/pyrenes_blonde",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/pyrenes_blonde_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//White Pyrenes End
+				}
+			}
+		},
+		
+		//Copy Start Here
+		
+			//Bernese Mountain Dog
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/pyrenes_black_baby, assets/pyrenes_black",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+				
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Bernese Mountain Dog": {
+                    "DisplayName": "Bernese Mountain Dog",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+				
+	//All Breeds		
+				
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "4",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/pyrenes_black",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/pyrenes_black_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+			
+					
+					//Bernese Mountain Dog End
+				}
+			}
+		},	
+		//Copy End Here
+		
+			//Copy Start Here
+		
+			//Blue Heeler
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/heeler_blue_baby, assets/heeler_blue",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+					
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+
+            "Entries": {
+                "Blue Heeler": {
+                    "DisplayName": "Blue Heeler",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "4",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/heeler_blue",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/heeler_blue_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//Blue Heeler End
+				}
+			}
+		},	
+		//Copy End Here
+		
+				//Copy Start Here
+		
+			//Blonde Heeler
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/heeler_blonde_baby, assets/heeler_blonde",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+				
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+	
+            "Entries": {
+                "Blonde Heeler": {
+                    "DisplayName": "Blonde Heeler",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "4",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/heeler_blonde",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/heeler_blonde_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//Blonde Heeler End
+				}
+			}
+		},	
+		//Copy End Here
+				//Copy Start Here
+		
+			//Blonde Mutt
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/mutt_blonde_baby, assets/mutt_blonde",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+				
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+		
+            "Entries": {
+                "Blonde Mutt": {
+                    "DisplayName": "Blonde Mutt",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "4",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/mutt_blonde",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/mutt_blonde_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//Blonde Mutt End
+				}
+			}
+		},	
+		//Copy End Here
+						//Copy Start Here
+		
+			//Brown Mutt
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/mutt_brown_baby, assets/mutt_brown",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+		
+            "Entries": {
+                "Brown Mutt": {
+                    "DisplayName": "Brown Mutt",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "4",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/mutt_brown",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/mutt_brown_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//Brown Mutt End
+				}
+			}
+		},	
+		//Copy End Here
+								//Copy Start Here
+		
+			//Brown Shepherd
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/shepherd_brown_baby, assets/shepherd_brown",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+					
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+	
+            "Entries": {
+                "Brown Shepherd": {
+                    "DisplayName": "Brown Shepherd",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "4",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/shepherd_brown",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/shepherd_brown_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//BrownShepherd End
+				}
+			}
+		},	
+		//Copy End Here
+		//Copy Start Here
+		
+			//White Shepherd
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/shepherd_blonde_baby, assets/shepherd_blonde",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+					
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+	
+            "Entries": {
+                "White Shepherd": {
+                    "DisplayName": "White Shepherd",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "4",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/shepherd_blonde",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/shepherd_blonde_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//White Shepherd End
+				}
+			}
+		},	
+		//Copy End Here
+						//Copy Start Here
+		
+			//Blonde Aussie
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/aussie_blonde_baby, assets/aussie_blonde",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+					
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+	
+            "Entries": {
+                "Blonde Aussie": {
+                    "DisplayName": "Blonde Aussie",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "4",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/aussie_blonde",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/aussie_blonde_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//Blonde Aussie End
+				}
+			}
+		},	
+		//Copy End Here
+		//Copy Start Here
+		
+			//Black Aussie
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/aussie_black_baby, assets/aussie_black",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+				
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+	
+            "Entries": {
+                "Black Aussie": {
+                    "DisplayName": "Black Aussie",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "14",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "2",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/aussie_black",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/aussie_black_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//Black Aussie End
+				}
+			}
+		},	
+		//Copy End Here
+		//Copy Start Here
+		
+			//Blue Aussie
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/aussie_blue_baby, assets/aussie_blue",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+					
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+
+            "Entries": {
+                "Blue Aussie": {
+                    "DisplayName": "Blue Aussie",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "2",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/aussie_blue",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/aussie_blue_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//Blue Aussie End
+				}
+			}
+		},	
+		//Copy End Here
+				//Copy Start Here
+		
+			//Blue Border Collie
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/bordercollie_blue_baby, assets/bordercollie_blue",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+				
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+			
+            "Entries": {
+                "Blue Border Collie": {
+                    "DisplayName": "Blue Border Collie",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "2",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/bordercollie_blue",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/bordercollie_blue_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//Blue Border Collie End
+				}
+			}
+		},	
+		//Copy End Here
+						//Copy Start Here
+		
+			//Blonde Border Collie
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/bordercollie_blonde_baby, assets/bordercollie_blonde",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+				
+            "Entries": {
+                "Blonde Border Collie": {
+                    "DisplayName": "Blonde Border Collie",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "2",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/bordercollie_blonde",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/bordercollie_blonde_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+					
+					//Blonde Border Collie End
+			
+			}
+			}
+		},	
+		//Copy End Here
+						//Copy Start Here
+		
+			//Black Border Collie
+		{
+		"LogName": "Load images",
+			"Action": "Load",
+			"Target": "assets/bordercollie_black_baby, assets/bordercollie_black",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+        {
+            "LogName": "Load data for LGD",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+			
+            "Entries": {
+                "Black Border Collie": {
+                    "DisplayName": "Black Border Collie",
+                    "House": "Barn",
+                    "Gender": "MaleOrFemale",
+					 "SellPrice": 15000,
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+									  },
+                    "RequiredBuilding": "Big Barn",
+                    "ShopDisplayName": "Livestock Guardian Dog",
+                    "ShopDescription": "A dog with a job who protects livestock and digs up truffles.",
+					"ShopMissingBuildingDescription": "Requires construction of a Big Barn.",
+			
+					"DaysToMature": "10",
+					"CanGetPregnant": true,
+					"ProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 15,
+							"ItemId": "430"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"MinimumFriendship": 200,
+							"ItemId": "430"
+						}
+					],
+					"DaysToProduce": "4",
+					"HarvestType": "DigUp",
+					"HarvestTool": null,
+					"FriendshipForFasterProduce": -1,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": -1,
+					"Sound": "Dogbark",
+					"BabySound": null,
+					"Texture": "assets/bordercollie_black",
+					"HarvestedTexture": null,
+					"BabyTexture": "assets/bordercollie_black_baby",
+					"UseFlippedRightForLeft": true,
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"ShadowWhenBabySwims": {
+						"Visible": false
+					},
+					"ShadowWhenBaby": {
+						"Visible": false
+					},
+					"ShadowWhenAdultSwims": {
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"ShowInSummitCredits": true
+            }
+			}
+		},
+		//Copy End Here
+// Sprite Load Below
+
+
+		
+		//Copy Start Here
+		// Great Pyrenes
+		
+		{
+			"LogName": "Load adultSprite for Great Pyrenes",
+			"Action": "Load",
+			"Target": "Animals/Great Pyrenes",
+			"FromFile": "assets/pyrenes_blonde.png"
+		},
+		{
+			"LogName": "Load babySprite for Great Pyrenes",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/pyrenes_blonde_baby.png"
+		},
+		
+		//Copy End Here
+
+		//Copy Start Here
+		// Bernese Mountain Dog
+		
+		{
+			"LogName": "Load adultSprite for Bernese Mountain Dog",
+			"Action": "Load",
+			"Target": "Animals/Bernese Mountain Dog",
+			"FromFile": "assets/pyrenes_black.png"
+		},
+		{
+			"LogName": "Load babySprite for Bernese Mountain Dog",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/pyrenes_black_baby.png"
+		},
+		
+		//Copy End Here
+		
+				//Copy Start Here
+		// Blue Heeler
+		
+		{
+			"LogName": "Load adultSprite for Blue Heeler",
+			"Action": "Load",
+			"Target": "Animals/Blue Heeler",
+			"FromFile": "assets/heeler_blue.png"
+		},
+		{
+			"LogName": "Load babySprite for Blue Heeler",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/heeler_blue_baby.png"
+		},
+		
+		//Copy End Here
+				//Copy Start Here
+		// Blonde Heeler
+		
+		{
+			"LogName": "Load adultSprite for Blonde Heeler",
+			"Action": "Load",
+			"Target": "Animals/Blonde Heeler",
+			"FromFile": "assets/heeler_blonde.png"
+		},
+		{
+			"LogName": "Load babySprite for Blonde Heeler",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/heeler_blonde_baby.png"
+		},
+		
+		//Copy End Here
+
+		//Copy Start Here
+		// Blonde Mutt
+		
+		{
+			"LogName": "Load adultSprite for Blonde Mutt",
+			"Action": "Load",
+			"Target": "Animals/Blonde Mutt",
+			"FromFile": "assets/mutt_blonde.png"
+		},
+		{
+			"LogName": "Load babySprite for Blonde Mutt",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/mutt_blonde_baby.png"
+		},
+		
+		//Copy End Here
+					//Copy Start Here
+		// Brown Mutt
+		
+		{
+			"LogName": "Load adultSprite for Brown Mutt",
+			"Action": "Load",
+			"Target": "Animals/Brown Mutt",
+			"FromFile": "assets/mutt_brown.png"
+		},
+		{
+			"LogName": "Load babySprite for Brown Mutt",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/mutt_blonde_baby.png"
+		},
+		
+		//Copy End Here
+		//Copy Start Here
+		// Brown Shepherd
+		
+		{
+			"LogName": "Load adultSprite for Brown Shepherd",
+			"Action": "Load",
+			"Target": "Animals/Brown Shepherd",
+			"FromFile": "assets/shepherd_brown.png"
+		},
+		{
+			"LogName": "Load babySprite for Brown Shepherd",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/shepherd_blonde_baby.png"
+		},
+		
+		//Copy End Here
+				//Copy Start Here
+		// White Shepherd
+		
+		{
+			"LogName": "Load adultSprite for White Shepherd",
+			"Action": "Load",
+			"Target": "Animals/White Shepherd",
+			"FromFile": "assets/shepherd_blonde.png"
+		},
+		{
+			"LogName": "Load babySprite for White Shepherd",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/shepherd_blonde_baby.png"
+		},
+		
+		//Copy End Here
+				//Copy Start Here
+		// Blonde Aussie
+		
+		{
+			"LogName": "Load adultSprite for Blonde Aussie",
+			"Action": "Load",
+			"Target": "Animals/Blonde Aussie",
+			"FromFile": "assets/aussie_blonde.png"
+		},
+		{
+			"LogName": "Load babySprite for Blonde Aussie",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/aussie_blonde_baby.png"
+		},
+		
+		//Copy End Here
+					//Copy Start Here
+		// Black Aussie
+		
+		{
+			"LogName": "Load adultSprite for Black Aussie",
+			"Action": "Load",
+			"Target": "Animals/Black Aussie",
+			"FromFile": "assets/aussie_black.png"
+		},
+		{
+			"LogName": "Load babySprite for Black Aussie",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/aussie_black_baby.png"
+		},
+		
+		//Copy End Here
+					//Copy Start Here
+		// Blue Aussie
+		
+		{
+			"LogName": "Load adultSprite for Blue Aussie",
+			"Action": "Load",
+			"Target": "Animals/Blue Aussie",
+			"FromFile": "assets/aussie_blue.png"
+		},
+		{
+			"LogName": "Load babySprite for Blue Aussie",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/aussie_blue_baby.png"
+		},
+		
+		//Copy End Here
+		//Copy Start Here
+		// Blue Border Collie
+		
+		{
+			"LogName": "Load adultSprite for Blue Border Collie",
+			"Action": "Load",
+			"Target": "Animals/Blue Border Collie",
+			"FromFile": "assets/bordercollie_blue.png"
+		},
+		{
+			"LogName": "Load babySprite for Blue Border Collie",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/bordercollie_blue_baby.png"
+		},
+		
+		//Copy End Here
+		//Copy Start Here
+		// Blonde Border Collie
+		
+		{
+			"LogName": "Load adultSprite for Blonde Border Collie",
+			"Action": "Load",
+			"Target": "Animals/Blonde Border Collie",
+			"FromFile": "assets/bordercollie_blonde.png"
+		},
+		{
+			"LogName": "Load babySprite for Blonde Border Collie",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/bordercollie_blonde_baby.png"
+		},
+		
+		//Copy End Here
+		//Copy Start Here
+		// Blsck Border Collie
+		
+		{
+			"LogName": "Load adultSprite for Blsck Border Collie",
+			"Action": "Load",
+			"Target": "Animals/Black Border Collie",
+			"FromFile": "assets/bordercollie_black.png"
+		},
+		{
+			"LogName": "Load babySprite for Black Border Collie",
+			"Action": "Load",
+			"Target": "Animals/",
+			"FromFile": "assets/bordercollie_black_baby.png"
+		},
+		
+		//Copy End Here
+    ]	
+}
+
