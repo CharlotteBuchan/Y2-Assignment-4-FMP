@@ -108,7 +108,7 @@ Animator:
   m_GameObject: {fileID: 224083031268830605}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 128bbdbd198d8b64f993da0c6e5b49a6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4b9992e2654d6104f9190c0d9f92abe9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -142,7 +142,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1048576
+    m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -161,12 +161,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   target: {fileID: 0}
-  isActive: 0
+  isActive: 1
   needsFood: 0
   foodReq: Seeds
   space: {x: 1, y: 1}
   range: 10000
-  isHolding: 1
+  isHolding: 0
 --- !u!114 &5009607675505270037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +179,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4febca2884e459f40acffaf34b6b5e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3298996930134188955}
+        m_TargetAssemblyTypeName: HatchBaby, Assembly-CSharp
+        m_MethodName: AgeUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   interactType: 0
-  isNear: 0
+  outputText: 
 --- !u!114 &3760469048292123780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,10 +253,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 99383
+    m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 524288
+    m_Bits: 1572864
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -403,6 +418,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 04a030255f7d5f24194aef8d7c35cd99, type: 2}
   - {fileID: 9100000, guid: 128bbdbd198d8b64f993da0c6e5b49a6, type: 2}
   - {fileID: 9100000, guid: 7148be367fb42c549b2083a28a037cd7, type: 2}
+  - {fileID: 9100000, guid: 460e7831e4e1012458e1f4f0ec4988cb, type: 2}
   random: 1
   ranVariantNum: 0
   variantNum: 0

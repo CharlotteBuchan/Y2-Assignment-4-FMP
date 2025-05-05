@@ -1,14 +1,24 @@
+using System;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
+using static InteractionPlayer;
 
 public class InteractionPreset : MonoBehaviour
 {
+    [Serializable] public class EventType : UnityEvent { }
+
+    [SerializeField] public EventType OnEvent;
+
     public InteractType interactType;
-    private TextMeshProUGUI interactText;
     private NpcToPlayer npcToPlayer;
-    private GameObject textGO;
-    [HideInInspector] public bool isNear;
+    [HideInInspector] public string outputText;
+
+    private void Start()
+    {
+        npcToPlayer = this.GetComponent<NpcToPlayer>();
+    }
 
     public enum InteractType
     {
@@ -18,73 +28,51 @@ public class InteractionPreset : MonoBehaviour
         collect,
     }
 
-    private void Start()
-    {
-        npcToPlayer = GetComponent<NpcToPlayer>();
-        textGO = GameObject.FindWithTag("InteractTag");
-        interactText = textGO.GetComponent<TextMeshProUGUI>();
-        interactText.text = " ";
-    }
-
-    private void Update()
-    {
-        if (isNear == true)
-        {
-            VariantCheck();
-        }
-
-        else if (isNear == false)
-        {
-            interactText.text = " ";
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.tag == "Player")
-        {
-            isNear = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.tag == "Player")
-        {
-            isNear = false;
-        }
-    }
-
-    private void VariantCheck()
+    public string VariantCheck()
     {
         if (interactType == InteractType.feed)
         {
-            if (npcToPlayer.isHolding == true)
+            if ((npcToPlayer.needsFood == true) && (npcToPlayer.isHolding == true))
             {
-                interactText.text = "[E] - Feed Animal";
+                outputText = "[E] - Feed Animal";
+                return outputText;
             }
 
-            //else if ()
+            else if ((npcToPlayer.needsFood == false) && (npcToPlayer.isHolding == true))
+            {
+                outputText = "[E] - Feed Baby Animal";
+                return outputText;
+            }
 
             else
             {
-                interactText.text = " ";
+                outputText = " ";
+                return outputText;
             }
         }
 
         else if (interactType == InteractType.chop)
         {
-            interactText.text = "[E] - Chop Wood";
+            outputText = "[E] - Chop Wood";
+            return outputText;
         }
 
         else if (interactType == InteractType.harvest)
         {
-            interactText.text = "[E] - Harvest";
+            outputText = "[E] - Harvest";
+            return outputText;
         }
 
         else if (interactType == InteractType.collect)
         {
-            interactText.text = "[E] - Collect";
+            outputText = "[E] - Collect";
+            return outputText;
+        }
+
+        else
+        {
+            outputText = " ";
+            return outputText;
         }
     }
 }

@@ -61,6 +61,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: d725aad980db51d4b81bcf452aa2045f, type: 2}
   - {fileID: 9100000, guid: 178904be46730f74088bf5de25d49ec8, type: 2}
   - {fileID: 9100000, guid: 35135e237b0eaaa429f917663426caed, type: 2}
+  - {fileID: 9100000, guid: 7ef74b64a7ca08948a78f571b02df720, type: 2}
   random: 0
   ranVariantNum: 0
   variantNum: 0
@@ -209,7 +210,7 @@ Animator:
   m_GameObject: {fileID: 6417188572538078055}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 35135e237b0eaaa429f917663426caed, type: 2}
+  m_Controller: {fileID: 9100000, guid: d9956255e8a27224186295067f52f4e1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -262,6 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7.5
   target: {fileID: 0}
+  isActive: 0
   needsFood: 1
   foodReq: Seeds
   space: {x: 0, y: 0}
@@ -279,8 +281,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4febca2884e459f40acffaf34b6b5e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1406229495919976761}
+        m_TargetAssemblyTypeName: HatchBaby, Assembly-CSharp
+        m_MethodName: AgeUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   interactType: 0
-  isNear: 0
+  outputText: 
 --- !u!114 &2902402664786795320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,7 +355,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 524288
+    m_Bits: 1572864
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -453,5 +470,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: 
+  player: {fileID: 0}
   adultPrefab: {fileID: 6417188572538078055}
   isAdult: 1
