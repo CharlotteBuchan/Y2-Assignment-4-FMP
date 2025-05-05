@@ -9,6 +9,7 @@ public class HatchBaby : MonoBehaviour
 
     [Header("Find")]
     [SerializeField] string targetTag;
+    [SerializeField] private GameObject player;
     private float maxDistanceToAdult = 50;
     private GameObject aboveOB;
     private NpcToPlayer npcScript;
@@ -17,12 +18,10 @@ public class HatchBaby : MonoBehaviour
 
     [Header("Grow")]
     [SerializeField] private GameObject adultPrefab;
-    [SerializeField] private RuntimeAnimatorController babyAnimator;
-    [SerializeField] private RuntimeAnimatorController adultAnimator;
+    [SerializeField] public bool isAdult;
     private bool bigEnough;
-    private bool isAdult;
     private Animator animator;
-    private float updateSize = 1.15f;
+    private Vector3 updateSize = new Vector3(0.125f, 0.125f, 0.125f);
     private float time;
 
 
@@ -31,35 +30,48 @@ public class HatchBaby : MonoBehaviour
         npcScript = GetComponent<NpcToPlayer>();
         followStop = GetComponent<FollowStop>();
         animator = GetComponent<Animator>();
-        FindClosestAdult();
-        FindAboveGO();
+        if (isAdult == false)
+        {
+            FindClosestAdult();
+            FindAboveGO();
+        }
+    }
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (nearestAdult == null)
+        if (isAdult == false)
         {
-            npcScript.enabled = false;
-            followStop.enabled = false;
-        
-            FindClosestAdult();
-        }
-
-        if ((npcScript.target == null) || (followStop.target == null))
-        {
-            aboveOB = FindAboveGO();
-
-            if (aboveOB != null)
+            if (nearestAdult == null)
             {
-                npcScript.target = aboveOB;
-                followStop.target = aboveOB;
+                npcScript.isActive = false;
+                followStop.enabled = false;
+
+                FindClosestAdult();
             }
 
-            else
+            if ((npcScript.target == null) || (followStop.target == null))
             {
-                npcScript.target = nearestAdult;
-                followStop.target = nearestAdult;
+                aboveOB = FindAboveGO();
+
+                if (aboveOB != null)
+                {
+                    npcScript.target = aboveOB;
+                    followStop.target = aboveOB;
+                }
+
+                else
+                {
+                    npcScript.target = nearestAdult;
+                    followStop.target = nearestAdult;
+                }
             }
+
+            //if ((npcScript.target == player) 
         }
     }
 
@@ -82,7 +94,7 @@ public class HatchBaby : MonoBehaviour
         if (nearestAdult != null)
         {
 
-            this.npcScript.enabled = true;
+            this.npcScript.isActive = true;
             this.followStop.enabled = true;
 
             this.transform.SetParent(nearestAdult.transform);
@@ -127,32 +139,34 @@ public class HatchBaby : MonoBehaviour
 
     public void AgeUp()
     {
-        if ((this.transform.localScale.x < 1.5f) && (animator.runtimeAnimatorController == babyAnimator))
+        if ((this.transform.localScale.x < 1f) && (isAdult == false))
         {
-            Vector3 newSize = this.transform.localScale * updateSize;
+            Vector3 newSize = this.transform.localScale + updateSize;
+
             StartCoroutine(ScaleUp(5.0f, newSize));
         }
 
-        else if ((this.transform.localScale.x > 1.5f) && (animator.runtimeAnimatorController == babyAnimator))
+        else if ((this.transform.localScale.x >= 1f) && (isAdult == false))
         {
-            Vector3 newSize = new Vector3(0.75f, 0.75f, 1);
-            StartCoroutine(ScaleUp(5.0f, newSize));
+            Vector3 newSize = new Vector3(1f, 1f, 1);
 
-            animator.runtimeAnimatorController = adultAnimator;
+            bigEnough = true;
+
+            StartCoroutine(ScaleUp(1.0f, newSize));
         }
 
-        else if (animator.runtimeAnimatorController == adultAnimator)
+        else if ((this.transform.localScale.x < 1) && (isAdult == true))
         {
             Vector3 newSize = new Vector3(1, 1, 1);
 
-            bigEnough = true;
+            bigEnough = false;
 
             StartCoroutine(ScaleUp(5.0f, newSize));
         }
 
         else
         {
-            Debug.Log("Nothing");
+            return;
         }
     }
 
@@ -173,9 +187,20 @@ public class HatchBaby : MonoBehaviour
         {
             GameObject newAdult = Instantiate(adultPrefab, this.transform.position, Quaternion.identity);
 
-            Transform animalSet = transform.parent;
+            newAdult.transform.localScale = new Vector3(0.75f, 0.75f, 1);
 
-            newAdult.transform.parent = animalSet.parent;
+            AnimalVariants currentVariant = this.GetComponentInChildren<AnimalVariants>();
+            AnimalVariants adultVariant = newAdult.GetComponentInChildren<AnimalVariants>();
+
+            newAdult.GetComponent<HatchBaby>().isAdult = true;
+
+            adultVariant.random = false;
+
+            adultVariant.variantNum = currentVariant.ranVariantNum;
+
+            GameObject animalSet = GameObject.Find("Animals");
+
+            newAdult.transform.parent = animalSet.transform;
 
             Destroy(this.gameObject);
         }

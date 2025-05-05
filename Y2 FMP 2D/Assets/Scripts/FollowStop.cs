@@ -18,7 +18,7 @@ public class FollowStop : MonoBehaviour
     {
         if (col.gameObject == target)
         {
-            NpcScript.enabled = false;
+            NpcScript.isActive = false;
 
             animator.SetBool("IsWalking", false);
         }
@@ -28,14 +28,14 @@ public class FollowStop : MonoBehaviour
     {
         if (col.gameObject == target)
         {
-            NpcScript.enabled = true;
+            NpcScript.isActive = true;
 
             animator.SetBool("IsWalking", true);
         }
     }
     private void Update()
     {
-        if (NpcScript.enabled == false)
+        if (NpcScript.isActive == false)
         {
             if (NpcScript.needsFood == true)
             {
@@ -54,7 +54,7 @@ public class FollowStop : MonoBehaviour
 
             else
             {
-                NpcScript.isHolding = false;
+                return ;
             }
         }
     }
