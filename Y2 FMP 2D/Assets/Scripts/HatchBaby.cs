@@ -21,7 +21,7 @@ public class HatchBaby : MonoBehaviour
     [SerializeField] public bool isAdult;
     private bool bigEnough;
     private Animator animator;
-    private Vector3 updateSize = new Vector3(0.125f, 0.125f, 0.125f);
+    public Vector3 updateSize = new Vector3(0.125f, 0.125f, 0.125f);
     private float time;
 
 
