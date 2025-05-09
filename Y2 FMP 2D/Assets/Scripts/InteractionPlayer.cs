@@ -7,6 +7,7 @@ using System.Linq;
 public class InteractionPlayer : MonoBehaviour
 {
     private bool isNear;
+    private InventoryManager inventoryManager;
     private TextMeshProUGUI interactText;
     private GameObject textGO;
     private bool isTrigger;
@@ -57,6 +58,8 @@ public class InteractionPlayer : MonoBehaviour
         if ((Input.GetKey(KeyCode.E)) && (isTrigger == true))
         {
             interactionPreset.OnEvent?.Invoke();
+
+            inventoryManager.GetSelectedItem(true);
         }
     }
 
