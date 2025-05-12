@@ -70,8 +70,6 @@ public class HatchBaby : MonoBehaviour
                     followStop.target = nearestAdult;
                 }
             }
-
-            //if ((npcScript.target == player) 
         }
     }
 

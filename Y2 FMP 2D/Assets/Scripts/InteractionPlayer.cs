@@ -7,13 +7,13 @@ using System.Linq;
 public class InteractionPlayer : MonoBehaviour
 {
     private bool isNear;
-    private InventoryManager inventoryManager;
+    public InventoryManager inventoryManager;
     private TextMeshProUGUI interactText;
     private GameObject textGO;
     private bool isTrigger;
     private InteractionPreset interactionPreset;
     private string outputText;
-    private List<InteractionPreset> nearbyAnimals = new List<InteractionPreset>();
+    private List<InteractionPreset> nearbyInteractables = new List<InteractionPreset>();
 
 
     void Start()
@@ -27,7 +27,6 @@ public class InteractionPlayer : MonoBehaviour
     void Update()
     {
         UpdateClosestAnimal();
-        Debug.Log(nearbyAnimals.Count);
 
         if (isNear == true)
         {
@@ -59,27 +58,18 @@ public class InteractionPlayer : MonoBehaviour
         {
             interactionPreset.OnEvent?.Invoke();
 
-            inventoryManager.GetSelectedItem(true);
+            if (inventoryManager.GetSelectedItem(false).useUp == true)
+            {
+                inventoryManager.GetSelectedItem(true);
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        //if (col.gameObject.TryGetComponent<InteractionPreset>(out var foundPreset))
-        //{
-        //    interactionPreset = foundPreset;
-        //    isNear = true;
-        //}
-        //
-        //else
-        //{
-        //    isNear = false;
-        //    return;
-        //}
-
         if (col.gameObject.TryGetComponent<InteractionPreset>(out var foundPreset))
         {
-            nearbyAnimals.Add(foundPreset);
+            nearbyInteractables.Add(foundPreset);
             UpdateClosestAnimal();
         }
     }
@@ -88,21 +78,21 @@ public class InteractionPlayer : MonoBehaviour
     {
         if (col.gameObject.TryGetComponent<InteractionPreset>(out var foundPreset))
         {
-            nearbyAnimals.Remove(foundPreset);
+            nearbyInteractables.Remove(foundPreset);
             UpdateClosestAnimal();
         }
     }
 
     private void UpdateClosestAnimal()
     {
-        if (nearbyAnimals.Count == 0)
+        if (nearbyInteractables.Count == 0)
         {
             isNear = false;
             interactionPreset = null;
             return;
         }
 
-        interactionPreset = nearbyAnimals
+        interactionPreset = nearbyInteractables
             .OrderBy(p => Vector2.Distance(transform.position, p.transform.position))
             .FirstOrDefault();
 

@@ -52,10 +52,8 @@ public class EggProcess : MonoBehaviour
 
             while (i < 1)
             {
-                Debug.Log("Start While");
                 i += Time.deltaTime * rate;
                 pulseOverlay.color = Color.Lerp(oldCol, newCol, i);
-                Debug.Log("End While");
                 yield return 0;
             }
 
@@ -64,10 +62,8 @@ public class EggProcess : MonoBehaviour
 
             while (i < 1)
             {
-                Debug.Log("Start While");
                 i += Time.deltaTime * rate;
                 pulseOverlay.color = Color.Lerp(newCol, oldCol, i);
-                Debug.Log("End While");
                 yield return 0;
             }
 
@@ -75,7 +71,6 @@ public class EggProcess : MonoBehaviour
         }
 
         StartCoroutine(Hatch(1f));
-        Debug.Log("Done");
     }
 
     private IEnumerator Hatch(float time)
@@ -91,7 +86,6 @@ public class EggProcess : MonoBehaviour
 
         while (i < 1)
         {
-            Debug.Log("HATCHINGGGGGGG");
             i += Time.deltaTime * rate;
             this.transform.localScale = Vector3.Lerp(oldSize, newSize, i);
             pulseOverlay.color = Color.Lerp(oldCol, newCol, i);

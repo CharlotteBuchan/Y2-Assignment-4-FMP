@@ -35,6 +35,7 @@ public class Item : ScriptableObject
     [Header("Only gameplay")]
     public TileBase tile;
     public ItemType type;
+    public bool useUp = true;
     public ActionType actionType;
     public Vector2Int range = new Vector2Int(5, 4);
 
@@ -43,13 +44,4 @@ public class Item : ScriptableObject
 
     [Header("Both")]
     public Sprite image;
-
-    public void Test()
-    {
-        if (type == ItemType.tool)
-        {
-
-        }
-    }
-
 }

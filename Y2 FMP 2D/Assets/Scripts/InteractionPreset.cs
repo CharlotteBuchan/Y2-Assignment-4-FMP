@@ -25,6 +25,7 @@ public class InteractionPreset : MonoBehaviour
         feed,
         chop,
         harvest,
+        mine,
         collect,
     }
 
@@ -53,7 +54,7 @@ public class InteractionPreset : MonoBehaviour
 
         else if (interactType == InteractType.chop)
         {
-            outputText = "[E] - Chop Wood";
+            outputText = "[E] - Chop Tree";
             return outputText;
         }
 
@@ -66,6 +67,12 @@ public class InteractionPreset : MonoBehaviour
         else if (interactType == InteractType.collect)
         {
             outputText = "[E] - Collect";
+            return outputText;
+        }
+
+        else if (interactType == InteractType.mine)
+        {
+            outputText = "[E] - Mine";
             return outputText;
         }
 
