@@ -353,6 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7005468551939379495}
   - component: {fileID: 3863418334225288049}
+  - component: {fileID: 3545631401992121432}
   m_Layer: 19
   m_Name: CowVariants
   m_TagString: Untagged
@@ -429,8 +430,45 @@ MonoBehaviour:
   - {fileID: 9100000, guid: eacd7e4858770284bb4c9ef2663403e2, type: 2}
   - {fileID: 9100000, guid: 8103d59b015c45e4e96b29b4deb80e48, type: 2}
   - {fileID: 9100000, guid: 7f2dbae06d7f5154a8f99b2042f216ce, type: 2}
+  - {fileID: 9100000, guid: d1170e9e96665904b82648826fb3a276, type: 2}
   - {fileID: 9100000, guid: 44e2ffa7aa57e174bb7af68b9becd012, type: 2}
   - {fileID: 9100000, guid: 75749f7c2d4123646bccced3b6725954, type: 2}
   random: 0
   ranVariantNum: 0
   variantNum: 0
+--- !u!58 &3545631401992121432
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7650087167563073380}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 524288
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 1147959
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 5.5
