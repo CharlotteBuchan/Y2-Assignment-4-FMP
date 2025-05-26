@@ -299,18 +299,6 @@ MonoBehaviour:
   OnEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1406229495919976761}
-        m_TargetAssemblyTypeName: HatchBaby, Assembly-CSharp
-        m_MethodName: AgeUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 254513891267684442}
         m_TargetAssemblyTypeName: SpawnBaby, Assembly-CSharp
         m_MethodName: Spawn
@@ -323,6 +311,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1406229495919976761}
+        m_TargetAssemblyTypeName: HatchBaby, Assembly-CSharp
+        m_MethodName: AgeUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  itemNeeded: {fileID: 0}
+  useItem: 1
   interactType: 0
   outputText: 
 --- !u!114 &2902402664786795320
@@ -500,7 +502,7 @@ MonoBehaviour:
   player: {fileID: 0}
   adultPrefab: {fileID: 6417188572538078055}
   isAdult: 1
-  bigEnough: 0
+  bigEnough: 1
   updateSize: {x: 0.125, y: 0.125, z: 0.125}
 --- !u!114 &254513891267684442
 MonoBehaviour:
@@ -515,4 +517,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   babyPrefab: {fileID: 8911622808235567813, guid: 7ca097652e1c66e4a959103e9be81a59, type: 3}
-  adultCheck: {fileID: 1406229495919976761}

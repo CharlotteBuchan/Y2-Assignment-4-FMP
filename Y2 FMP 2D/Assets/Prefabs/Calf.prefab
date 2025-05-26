@@ -108,7 +108,7 @@ Animator:
   m_GameObject: {fileID: 970875003800360404}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1512cb69bd8b5bf40bb6769500e8c907, type: 2}
+  m_Controller: {fileID: 9100000, guid: 894ee3413b810c14fb985f30ce13a3ae, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -253,6 +253,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  itemNeeded: {fileID: 0}
+  useItem: 1
   interactType: 0
   outputText: 
 --- !u!114 &3910694195324052267
@@ -271,6 +273,7 @@ MonoBehaviour:
   player: {fileID: 0}
   adultPrefab: {fileID: 2531131809029560925, guid: 53b89d4732689c747ab28442dd17699d, type: 3}
   isAdult: 0
+  bigEnough: 0
   updateSize: {x: 0.125, y: 0.125, z: 0.125}
 --- !u!114 &4003300688671283612
 MonoBehaviour:
