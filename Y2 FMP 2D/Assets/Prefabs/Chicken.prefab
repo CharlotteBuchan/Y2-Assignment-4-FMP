@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 566871574482693929}
   - component: {fileID: 1111606731023000973}
   - component: {fileID: 1406229495919976761}
+  - component: {fileID: 254513891267684442}
   m_Layer: 19
   m_Name: Chicken
   m_TagString: ChickenAdult
@@ -224,7 +225,7 @@ Animator:
   m_GameObject: {fileID: 6417188572538078055}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 41b482826837db84c9be1012f36a9604, type: 2}
+  m_Controller: {fileID: 9100000, guid: 95aad2b09090e634594db3d28bc111a1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -301,6 +302,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1406229495919976761}
         m_TargetAssemblyTypeName: HatchBaby, Assembly-CSharp
         m_MethodName: AgeUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 254513891267684442}
+        m_TargetAssemblyTypeName: SpawnBaby, Assembly-CSharp
+        m_MethodName: Spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -487,3 +500,19 @@ MonoBehaviour:
   player: {fileID: 0}
   adultPrefab: {fileID: 6417188572538078055}
   isAdult: 1
+  bigEnough: 0
+  updateSize: {x: 0.125, y: 0.125, z: 0.125}
+--- !u!114 &254513891267684442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6417188572538078055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1db6558eba4ec48bddca7f480c06db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  babyPrefab: {fileID: 8911622808235567813, guid: 7ca097652e1c66e4a959103e9be81a59, type: 3}
+  adultCheck: {fileID: 1406229495919976761}

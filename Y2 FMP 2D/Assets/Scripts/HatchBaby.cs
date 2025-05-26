@@ -18,8 +18,8 @@ public class HatchBaby : MonoBehaviour
 
     [Header("Grow")]
     [SerializeField] private GameObject adultPrefab;
-    [SerializeField] public bool isAdult;
-    private bool bigEnough;
+    public bool isAdult;
+    public bool bigEnough;
     private Animator animator;
     public Vector3 updateSize = new Vector3(0.125f, 0.125f, 0.125f);
     private float time;

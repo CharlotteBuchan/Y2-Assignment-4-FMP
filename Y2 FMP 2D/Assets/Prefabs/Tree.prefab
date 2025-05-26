@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
-  offset: -2
+  offset: 1
   runOnlyOnce: 1
 --- !u!58 &8992378719096485451
 CircleCollider2D:
@@ -453,6 +453,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  itemNeeded: {fileID: 11400000, guid: 90bbfad0754a2a14d9174f8a11ccd45a, type: 2}
   interactType: 1
   outputText: 
 --- !u!114 &8548633446426572653
@@ -468,4 +469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallenPreset: {fileID: 2335983070621450369}
+  minDrops: 5
+  maxDrops: 6
   droppedItem: {fileID: 11400000, guid: d22beae1e0d738646b2d6293a3538cb1, type: 2}

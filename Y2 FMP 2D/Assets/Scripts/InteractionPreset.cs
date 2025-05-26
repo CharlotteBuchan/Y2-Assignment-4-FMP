@@ -11,6 +11,9 @@ public class InteractionPreset : MonoBehaviour
 
     [SerializeField] public EventType OnEvent;
 
+    [SerializeField] private Item itemNeeded;
+
+    private InventoryManager inventoryManager;
     public InteractType interactType;
     private NpcToPlayer npcToPlayer;
     [HideInInspector] public string outputText;
@@ -18,6 +21,7 @@ public class InteractionPreset : MonoBehaviour
     private void Start()
     {
         npcToPlayer = this.GetComponent<NpcToPlayer>();
+        inventoryManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryManager>();
     }
 
     public enum InteractType
@@ -54,8 +58,17 @@ public class InteractionPreset : MonoBehaviour
 
         else if (interactType == InteractType.chop)
         {
-            outputText = "[E] - Chop Tree";
-            return outputText;
+            if (inventoryManager.GetSelectedItem(false) == itemNeeded)
+            {
+                outputText = "[E] - Chop Tree";
+                return outputText;
+            }
+
+            else
+            {
+                outputText = " ";
+                return outputText;
+            }
         }
 
         else if (interactType == InteractType.harvest)

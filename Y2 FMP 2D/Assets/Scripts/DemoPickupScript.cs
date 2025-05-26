@@ -23,7 +23,7 @@ public class DemoPickupScript : MonoBehaviour
 
     public void GetSelectedItem()
     {
-        Item receivedItem = inventoryManager.GetSelectedItem(false);
+        Item receivedItem = inventoryManager.GetSelectedItem(true);
         if (receivedItem != null)
         {
         }

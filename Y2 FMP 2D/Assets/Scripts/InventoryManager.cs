@@ -113,9 +113,10 @@ public class InventoryManager : MonoBehaviour
         if (itemInSlot != null)
         {
             Item item = itemInSlot.item;
-            if (use == true)
+            if (use == true && item.useUp == true)
             {
                 itemInSlot.count--;
+
                 if (itemInSlot.count <= 0)
                 {
                     Destroy(itemInSlot.gameObject);

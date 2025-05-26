@@ -7,7 +7,7 @@ using System.Linq;
 public class InteractionPlayer : MonoBehaviour
 {
     private bool isNear;
-    public InventoryManager inventoryManager;
+    private InventoryManager inventoryManager;
     private TextMeshProUGUI interactText;
     private GameObject textGO;
     private bool isTrigger;
@@ -21,6 +21,7 @@ public class InteractionPlayer : MonoBehaviour
         isTrigger = false;
         textGO = GameObject.FindWithTag("InteractTag");
         interactText = textGO.GetComponent<TextMeshProUGUI>();
+        inventoryManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryManager>();
         interactText.text = " ";
     }
 
@@ -54,14 +55,11 @@ public class InteractionPlayer : MonoBehaviour
 
     private void onClick()
     {
-        if ((Input.GetKey(KeyCode.E)) && (isTrigger == true))
+        if ((Input.GetKeyDown(KeyCode.E)) && (isTrigger == true))
         {
-            interactionPreset.OnEvent?.Invoke();
+            inventoryManager.GetSelectedItem(true);
 
-            if (inventoryManager.GetSelectedItem(false).useUp == true)
-            {
-                inventoryManager.GetSelectedItem(true);
-            }
+            interactionPreset.OnEvent?.Invoke();
         }
     }
 

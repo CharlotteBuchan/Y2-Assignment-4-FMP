@@ -10,20 +10,35 @@ public class ObjectAction : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color oldCol;
     private Color newCol;
+    [SerializeField] private int minDrops;
+    [SerializeField] private int maxDrops;
+    private int droppedAmount;
     public Item droppedItem;
     private InventoryManager inventoryManager;
 
 
     void Start()
     {
+
         player = GameObject.FindGameObjectWithTag("Player");
         playerAnimator = player.GetComponent<Animator>();
         inventoryManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryManager>();
     }
 
+    public void AddItems()
+    {
+        Debug.Log("dROPPING?");
+        droppedAmount = Random.Range(minDrops, maxDrops);
+        int i = 0;
+        while (i < droppedAmount)
+        {
+            inventoryManager.AddItem(droppedItem);
+            i++;
+        }
+    }
+
     public void Chop()
     {
-        inventoryManager.AddItem(droppedItem);
         oldCol = new Color(1, 1, 1, 1);
         newCol = new Color(1, 1, 1, 0);
         spriteRenderer = this.GetComponent<SpriteRenderer>();
@@ -32,9 +47,7 @@ public class ObjectAction : MonoBehaviour
         {
             isDoing = true;
             
-            StartCoroutine(rotateTree(5.0f));
-
-            isDoing = false;
+            StartCoroutine(treeFall(5.0f));
 
             //int droppedAmount = Random.Range(3, 6);
             //
@@ -46,7 +59,7 @@ public class ObjectAction : MonoBehaviour
         }
     }
 
-    private IEnumerator rotateTree(float time)
+    private IEnumerator treeFall(float time)
     {
         playerAnimator.SetBool("IsChopping", true);
         float i = 0;
@@ -87,6 +100,11 @@ public class ObjectAction : MonoBehaviour
             yield return 0;
         }
 
+        isDoing = false;
+
+        AddItems();
+
+        Destroy(this); 
         
     }
 

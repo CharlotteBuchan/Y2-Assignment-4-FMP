@@ -29,8 +29,6 @@ public class FollowStop : MonoBehaviour
         if (col.gameObject == target)
         {
             NpcScript.isActive = true;
-
-            animator.SetBool("IsWalking", true);
         }
     }
     private void Update()
