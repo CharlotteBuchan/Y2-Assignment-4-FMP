@@ -15,6 +15,7 @@ public class ObjectAction : MonoBehaviour
     private int droppedAmount;
     public Item droppedItem;
     private InventoryManager inventoryManager;
+    [SerializeField] private NightCycle nightCycle;
 
 
     void Start()
@@ -116,5 +117,10 @@ public class ObjectAction : MonoBehaviour
     public void Harvest()
     {
 
+    }
+
+    public void Sleep()
+    {
+        nightCycle.isSleeping = true;
     }
 }

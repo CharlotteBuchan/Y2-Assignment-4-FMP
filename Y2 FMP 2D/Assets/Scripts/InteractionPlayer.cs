@@ -57,7 +57,10 @@ public class InteractionPlayer : MonoBehaviour
     {
         if ((Input.GetKeyDown(KeyCode.E)) && (isTrigger == true))
         {
-            inventoryManager.GetSelectedItem(true);
+            if (interactionPreset.useItem == true)
+            {
+                inventoryManager.GetSelectedItem(true);
+            }
 
             interactionPreset.OnEvent?.Invoke();
         }

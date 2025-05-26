@@ -13,6 +13,8 @@ public class InteractionPreset : MonoBehaviour
 
     [SerializeField] private Item itemNeeded;
 
+    public bool useItem = true;
+
     private InventoryManager inventoryManager;
     public InteractType interactType;
     private NpcToPlayer npcToPlayer;
@@ -31,6 +33,7 @@ public class InteractionPreset : MonoBehaviour
         harvest,
         mine,
         collect,
+        sleep,
     }
 
     public string VariantCheck()
@@ -79,13 +82,21 @@ public class InteractionPreset : MonoBehaviour
 
         else if (interactType == InteractType.collect)
         {
-            outputText = "[E] - Collect";
+            useItem = false;
+            outputText = "[E] - Pick Up";
             return outputText;
         }
 
         else if (interactType == InteractType.mine)
         {
             outputText = "[E] - Mine";
+            return outputText;
+        }
+
+        else if (interactType == InteractType.sleep)
+        {
+            useItem = false;
+            outputText = "E - Sleep";
             return outputText;
         }
 

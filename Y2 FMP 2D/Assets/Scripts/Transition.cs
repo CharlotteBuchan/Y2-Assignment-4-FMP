@@ -81,6 +81,13 @@ public class Transition : MonoBehaviour
 
     private void TeleportTo()
     {
-        player.transform.localPosition = teleportTo.transform.position;
+        if (teleportTo != null)
+        {
+            player.transform.localPosition = teleportTo.transform.position;
+        }
+        else
+        {
+            return;
+        }
     }
 }

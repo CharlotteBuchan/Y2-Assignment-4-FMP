@@ -5,6 +5,8 @@ using UnityEngine.Rendering.Universal;
 using TMPro;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.UIElements;
+using UnityEditor.PackageManager.UI;
 
 public class NightCycle : MonoBehaviour
 {
@@ -100,6 +102,11 @@ public class NightCycle : MonoBehaviour
             StartCoroutine(ToDay(1f));
         }
 
+        else
+        {
+            isSleeping = false;
+        }
+
     }
 
     private IEnumerator ToNight(float time)
@@ -192,6 +199,7 @@ public class NightCycle : MonoBehaviour
 
         if (isNight == false) // if day
         {
+            isSleeping = false;
             currentBeam = dayLightBeam;
             oppositeBeam = nightLightBeam;
             oppBeamPos = oppositeBeam.transform.rotation;
