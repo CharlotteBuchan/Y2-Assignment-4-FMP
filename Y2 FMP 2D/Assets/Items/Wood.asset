@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 0}
   type: 1
+  useUp: 1
   actionType: 7
   range: {x: 5, y: 4}
+  purchasePrice: 10
+  sellPrice: 5
   stackable: 1
   image: {fileID: 8519781672183495553, guid: 923587b2ef922dd46b0078a11b5bf93a, type: 3}

@@ -48,15 +48,7 @@ public class ObjectAction : MonoBehaviour
         {
             isDoing = true;
             
-            StartCoroutine(treeFall(5.0f));
-
-            //int droppedAmount = Random.Range(3, 6);
-            //
-            //for (int a = 0; a <= droppedAmount; a++)
-            //{
-            //    inventoryManager.AddItem(droppedItem);
-            //}
-            //inventoryManager.AddItem(droppedItem);
+            StartCoroutine(treeFall(5f));
         }
     }
 
@@ -84,12 +76,12 @@ public class ObjectAction : MonoBehaviour
         while (i < 1)
         {
             i += Time.deltaTime * rate;
-            this.transform.rotation = Quaternion.Lerp(oldRotation.localRotation, newRotation.localRotation, Time.deltaTime * rate);
+            this.transform.rotation = Quaternion.Lerp(oldRotation.localRotation, newRotation.localRotation, i);
             this.transform.position = Vector2.Lerp(oldRotation.position, newRotation.position, i);
             yield return 0;
         }
 
-        time = 3f;
+        time = 2f;
 
         i = 0;
         rate = 1 / time;
@@ -105,7 +97,7 @@ public class ObjectAction : MonoBehaviour
 
         AddItems();
 
-        Destroy(this); 
+        this.gameObject.SetActive(false);
         
     }
 

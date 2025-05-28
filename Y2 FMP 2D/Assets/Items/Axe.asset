@@ -15,7 +15,11 @@ MonoBehaviour:
   tile: {fileID: 0}
   type: 0
   useUp: 0
+  usesLeft: 0
   actionType: 1
   range: {x: 5, y: 4}
+  purchasePrice: 10
+  sellPrice: 0
+  description: A tool used for chopping down trees. (5x Uses)
   stackable: 0
   image: {fileID: -7773870562576252253, guid: 3d2d0c4e2bb578c42b4c9b37ac543b45, type: 3}

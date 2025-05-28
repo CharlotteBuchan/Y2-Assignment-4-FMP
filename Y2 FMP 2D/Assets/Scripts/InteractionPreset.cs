@@ -34,6 +34,7 @@ public class InteractionPreset : MonoBehaviour
         mine,
         collect,
         sleep,
+        open,
     }
 
     public string VariantCheck()
@@ -97,6 +98,13 @@ public class InteractionPreset : MonoBehaviour
         {
             useItem = false;
             outputText = "E - Sleep";
+            return outputText;
+        }
+
+        else if (interactType == InteractType.open)
+        {
+            useItem = false;
+            outputText = "E - Open Shop";
             return outputText;
         }
 

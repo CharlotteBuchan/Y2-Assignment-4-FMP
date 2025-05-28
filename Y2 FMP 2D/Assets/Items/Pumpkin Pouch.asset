@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 0}
   type: 4
+  useUp: 1
+  usesLeft: 0
   actionType: 5
   range: {x: 5, y: 4}
+  purchasePrice: 10
+  sellPrice: 0
+  description: A pack of seeds used to grow pumpkins.
   stackable: 1
   image: {fileID: -6266224706370420965, guid: bee01ac9cfab15e4ca067f8d2a42b85d, type: 3}

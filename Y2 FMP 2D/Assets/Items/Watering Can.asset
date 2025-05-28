@@ -15,7 +15,11 @@ MonoBehaviour:
   tile: {fileID: 0}
   type: 0
   useUp: 0
+  usesLeft: 0
   actionType: 4
   range: {x: 5, y: 4}
+  purchasePrice: 5
+  sellPrice: 0
+  description: A tool uesd for watering plants. (5x Uses)
   stackable: 0
   image: {fileID: -6987332668960274312, guid: 3d2d0c4e2bb578c42b4c9b37ac543b45, type: 3}

@@ -276,7 +276,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.01, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 7.5, y: 7.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4323426767096952928}
@@ -454,6 +454,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   itemNeeded: {fileID: 11400000, guid: 90bbfad0754a2a14d9174f8a11ccd45a, type: 2}
+  useItem: 1
   interactType: 1
   outputText: 
 --- !u!114 &8548633446426572653
@@ -472,3 +473,4 @@ MonoBehaviour:
   minDrops: 5
   maxDrops: 6
   droppedItem: {fileID: 11400000, guid: d22beae1e0d738646b2d6293a3538cb1, type: 2}
+  nightCycle: {fileID: 0}

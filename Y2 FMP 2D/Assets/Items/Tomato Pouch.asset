@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 0}
   type: 4
+  useUp: 1
+  usesLeft: 0
   actionType: 5
   range: {x: 5, y: 4}
+  purchasePrice: 15
+  sellPrice: 0
+  description: A pack of seeds used to grow tomatoes.
   stackable: 1
   image: {fileID: -3901715911805076996, guid: bee01ac9cfab15e4ca067f8d2a42b85d, type: 3}

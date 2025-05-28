@@ -5,13 +5,16 @@ public class InventoryManager : MonoBehaviour
 {
     public int maxStackedItems = 64;
     public InventorySlot[] inventorySlots;
+    public InventorySlot[] sellSlots;
     public GameObject inventoryItemPrefab;
     private InventorySlot inventorySlot;
+    private MoneySystem moneySystem;
 
     int selectedSlot = -1;
 
     private void Start()
     {
+        moneySystem = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<MoneySystem>();
         ChangeSelectedSlot(0);
     }
 
@@ -127,9 +130,44 @@ public class InventoryManager : MonoBehaviour
                 }
             }
 
-            return itemInSlot.item;
+            else if (use == true && item.useUp == false)
+            {
+                item.usesLeft--;
+
+                if (item.usesLeft <= 0)
+                {
+                    Destroy(itemInSlot.gameObject);
+                }
+            }
+
+                return itemInSlot.item;
         }
 
         return null;
+    }
+
+    public void SellItems(bool use)
+    {
+        foreach (InventorySlot sellSlot in sellSlots)
+        {
+            InventoryItem itemInSlot = sellSlot.GetComponentInChildren<InventoryItem>();
+
+            if (use == true)
+            {
+                if (itemInSlot != null && (itemInSlot.item.sellPrice > 0))
+                {
+                    while (itemInSlot.count > 0)
+                    {
+                        moneySystem.SellItem(itemInSlot.item);
+                        itemInSlot.count--;
+                    }
+
+                    if (itemInSlot.count <= 0)
+                    {
+                        Destroy(itemInSlot.gameObject);
+                    }
+                }
+            }
+        }
     }
 }

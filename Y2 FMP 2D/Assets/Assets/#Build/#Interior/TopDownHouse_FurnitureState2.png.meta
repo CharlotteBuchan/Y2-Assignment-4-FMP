@@ -1939,26 +1939,32 @@ TextureImporter:
       name: TopDownHouse_FurnitureState2_225
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
+        x: 82
+        y: 1
+        width: 42
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -5, y: 4}
-        - {x: -4, y: 0}
-        - {x: -3, y: -2}
-        - {x: -1, y: -4}
-        - {x: 0, y: -7}
-        - {x: 3, y: -7}
-        - {x: 5, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: 8}
-        - {x: -6, y: 8}
+      - - {x: 21, y: 3.5}
+        - {x: -20, y: 3.5}
+        - {x: -20, y: -0.5}
+        - {x: -19, y: -4.5}
+        - {x: -18, y: -6.5}
+        - {x: -16, y: -8.5}
+        - {x: -15, y: -11.5}
+        - {x: -12, y: -11.5}
+        - {x: -10, y: -9.5}
+        - {x: 11, y: -9.5}
+        - {x: 13, y: -11.5}
+        - {x: 16, y: -11.5}
+        - {x: 17, y: -8.5}
+        - {x: 19, y: -6.5}
+        - {x: 20, y: -4.5}
+        - {x: 21, y: -0.5}
       tessellationDetail: 0
       bones: []
       spriteID: cae310197c4d02e4bbfdbf0ab87ec15f
@@ -5124,88 +5130,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TopDownHouse_FurnitureState2_212
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: -3, y: 0}
-        - {x: -6, y: -3}
-        - {x: -6, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: -1}
-        - {x: 2, y: -1}
-        - {x: 1, y: 0}
-      tessellationDetail: 0
-      bones: []
-      spriteID: b233e9e9d98b42a45a21bd6f266b8b50
-      internalID: 1267366895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TopDownHouse_FurnitureState2_213
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: -1}
-        - {x: -8, y: -1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab6e803d850317140bf0b881827e7d95
-      internalID: -30042921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TopDownHouse_FurnitureState2_214
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 4, y: -8}
-        - {x: 4, y: -4}
-        - {x: 1, y: -1}
-        - {x: -8, y: -1}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96bc1384488c96b4fb75b5707081305c
-      internalID: 451537863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: TopDownHouse_FurnitureState2_215
       rect:
         serializedVersion: 2
@@ -5363,64 +5287,6 @@ TextureImporter:
       bones: []
       spriteID: 58ccf91a2642f10438a19c28ff4a5796
       internalID: -137800471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TopDownHouse_FurnitureState2_226
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -5}
-        - {x: 8, y: -5}
-        - {x: 8, y: 8}
-        - {x: -8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3731b5480fa26b64691861732bd829f6
-      internalID: -911028762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TopDownHouse_FurnitureState2_227
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -5}
-        - {x: -6, y: -5}
-        - {x: -4, y: -7}
-        - {x: -1, y: -7}
-        - {x: 0, y: -4}
-        - {x: 2, y: -2}
-        - {x: 3, y: 0}
-        - {x: 4, y: 4}
-        - {x: 4, y: 8}
-        - {x: -8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f03b62a0b39b8ee41b8a6d39bb211832
-      internalID: 910562516
       vertices: []
       indices: 
       edges: []
