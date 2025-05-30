@@ -276,7 +276,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.01, y: 0, z: 0}
-  m_LocalScale: {x: 7.5, y: 7.5, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4323426767096952928}
@@ -456,6 +456,8 @@ MonoBehaviour:
   itemNeeded: {fileID: 11400000, guid: 90bbfad0754a2a14d9174f8a11ccd45a, type: 2}
   useItem: 1
   interactType: 1
+  cropScript: {fileID: 0}
+  growScript: {fileID: 0}
   outputText: 
 --- !u!114 &8548633446426572653
 MonoBehaviour:

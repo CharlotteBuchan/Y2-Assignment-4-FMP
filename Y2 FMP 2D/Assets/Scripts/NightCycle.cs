@@ -1,12 +1,7 @@
 using System.Collections;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using TMPro;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine.UIElements;
-using UnityEditor.PackageManager.UI;
 
 public class NightCycle : MonoBehaviour
 {
@@ -14,6 +9,10 @@ public class NightCycle : MonoBehaviour
     [Header("Misc")]
 
     [SerializeField] private TextMeshProUGUI daysCount;
+    private InputControl playerInput;
+    [SerializeField] private GameObject cropTiles;
+    private GameObject[] crops;
+    public CropGrow cropScript;
 
     public bool isNight = false;
     private bool isRunning = false;
@@ -72,8 +71,9 @@ public class NightCycle : MonoBehaviour
     {
         dayLightBeamCol = dayLightBeam.GetComponent<Light2D>();
         nightLightBeamCol = nightLightBeam.GetComponent<Light2D>();
+        playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<InputControl>();
         daysNum = 1;
-        StartCoroutine(CycleLength(10f));
+        StartCoroutine(CycleLength(60f));
     }
 
     // Update is called once per frame
@@ -84,12 +84,12 @@ public class NightCycle : MonoBehaviour
             daysNum++;
             daysCount.text = ("Day " + daysNum);
 
-            StartCoroutine(ToDay(3f));
+            StartCoroutine(ToDay(30f));
         }
 
         else if (isNight == false && isRunning == false)
         {
-            StartCoroutine(ToNight(3f));
+            StartCoroutine(ToNight(30f));
         }
 
         else if (isSleeping == true && isNight == true)
@@ -100,6 +100,8 @@ public class NightCycle : MonoBehaviour
             daysCount.text = ("Day " + daysNum);
 
             StartCoroutine(ToDay(1f));
+
+            playerInput.overide = false;
         }
 
         else
@@ -145,7 +147,7 @@ public class NightCycle : MonoBehaviour
             yield return 0;
         }
 
-        StartCoroutine(CycleLength(5f));
+        StartCoroutine(CycleLength(60f));
     }
 
     private IEnumerator ToDay(float time)
@@ -185,7 +187,7 @@ public class NightCycle : MonoBehaviour
             yield return 0;
         }
 
-        StartCoroutine(CycleLength(5f));
+        StartCoroutine(CycleLength(60f));
     }
 
     private IEnumerator CycleLength(float time)

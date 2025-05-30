@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e59811d9fbb68043a6035f8925fc9bf, type: 3}
+  m_Name: Chick
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 224083031268830605, guid: 006f6555658323845b131b08b0de2cb2, type: 3}
+  purchasePrice: 50
+  icon: {fileID: -6955577902092262842, guid: 539f72aef061d5f4c8f2d42b3313f31c, type: 3}
+  description: A young chicken. Won't produce until fully grown.

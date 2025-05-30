@@ -8,12 +8,12 @@ public class DigGround : MonoBehaviour
     [SerializeField] private Tilemap highlightMap;
 
     private Animator animator;
-    public CharacterMovement speedScript;
+    public PlayerInput speedScript;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        speedScript = GetComponent<CharacterMovement>();
+        speedScript = GetComponent<PlayerInput>();
     }
 
 
@@ -29,22 +29,20 @@ public class DigGround : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
 
-            speedScript.speed = 0;
+            speedScript.enabled = false;
 
             animator.SetBool("IsHoeing", true);
 
             animator.Play("Hoeing Blend Tree");
 
-            Debug.Log(speedScript.speed);
-
             highlightMap.SetTile(currentCell, null);
 
             animator.SetBool("IsHoeing", false);
-        }
 
-        if ((animator.GetCurrentAnimatorStateInfo(0).IsName("Hoeing Blend Tree")) == false)
-        {
-            speedScript.speed = 20;
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Hoeing Blend Tree") == false)
+            {
+                speedScript.enabled = true;
+            }
         }
     }
 }

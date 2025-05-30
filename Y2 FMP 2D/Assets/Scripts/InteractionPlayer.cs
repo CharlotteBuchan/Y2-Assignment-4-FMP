@@ -62,7 +62,10 @@ public class InteractionPlayer : MonoBehaviour
                 inventoryManager.GetSelectedItem(true);
             }
 
-            interactionPreset.OnEvent?.Invoke();
+            if (interactText.text != "Not Enough Water")
+            {
+                interactionPreset.OnEvent?.Invoke();
+            }
         }
     }
 

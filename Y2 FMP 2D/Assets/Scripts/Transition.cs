@@ -10,14 +10,14 @@ public class Transition : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject vignetteImage;
     [SerializeField] bool activeInactive;
-    private PlayerInput playerInput;
+    private InputControl playerInput;
 
     Vector3 smallSize = new Vector3(0.1f, 0.1f, 0.1f);
     Vector3 bigSize = new Vector3(3.5f, 3.5f, 3.5f);
 
     private void Start()
     {
-        playerInput = player.gameObject.GetComponent<PlayerInput>();
+        playerInput = player.gameObject.GetComponent<InputControl>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -27,7 +27,7 @@ public class Transition : MonoBehaviour
             Debug.Log("YAY");
             Debug.Log(playerInput);
             transitionUI.SetActive(true);
-            playerInput.enabled = false;
+            playerInput.overide = true;
             StartCoroutine(ScaleDownAnimation(2.0f));
         }
     }
@@ -76,7 +76,7 @@ public class Transition : MonoBehaviour
 
         transitionUI.SetActive(false);
 
-        playerInput.enabled = true;
+        playerInput.overide = false;
     }
 
     private void TeleportTo()

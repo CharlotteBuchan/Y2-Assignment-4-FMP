@@ -280,7 +280,7 @@ MonoBehaviour:
   target: {fileID: 0}
   isActive: 0
   needsFood: 1
-  foodReq: Seeds
+  foodReq: Chicken Seeds
   space: {x: 0, y: 0}
   range: 25
   isHolding: 0
@@ -326,6 +326,8 @@ MonoBehaviour:
   itemNeeded: {fileID: 0}
   useItem: 1
   interactType: 0
+  cropScript: {fileID: 0}
+  growScript: {fileID: 0}
   outputText: 
 --- !u!114 &2902402664786795320
 MonoBehaviour:

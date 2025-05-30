@@ -163,7 +163,7 @@ MonoBehaviour:
   target: {fileID: 0}
   isActive: 1
   needsFood: 0
-  foodReq: Seeds
+  foodReq: Chicken Seeds
   space: {x: 1, y: 1}
   range: 10000
   isHolding: 0
@@ -194,7 +194,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  itemNeeded: {fileID: 0}
+  useItem: 1
   interactType: 0
+  cropScript: {fileID: 0}
+  growScript: {fileID: 0}
   outputText: 
 --- !u!114 &3760469048292123780
 MonoBehaviour:
@@ -225,6 +229,8 @@ MonoBehaviour:
   player: {fileID: 0}
   adultPrefab: {fileID: 6417188572538078055, guid: 5ce329489adecd64b8a1d18a49f98c16, type: 3}
   isAdult: 0
+  bigEnough: 0
+  updateSize: {x: 0.125, y: 0.125, z: 0.125}
 --- !u!114 &7877028232512414683
 MonoBehaviour:
   m_ObjectHideFlags: 0

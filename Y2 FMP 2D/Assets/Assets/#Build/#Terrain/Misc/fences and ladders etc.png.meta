@@ -156,108 +156,20 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fences and ladders etc_0
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 38
-        width: 16
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6bc1e95cabe58bf90800000000000000
-      internalID: -6937691069691847498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fences and ladders etc_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 86
-        width: 34
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75301428e52fab930800000000000000
-      internalID: 4159903693556220759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fences and ladders etc_2
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 38
-        width: 40
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a319e703d7f96ffa0800000000000000
-      internalID: -5767246912768011974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fences and ladders etc_3
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 38
-        width: 8
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f183998f65450650800000000000000
-      internalID: 6198436807497187831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: fences and ladders etc_4
       rect:
         serializedVersion: 2
-        x: 98
-        y: 86
-        width: 13
-        height: 23
+        x: 32
+        y: 87
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 637f66e5ef6015ce0800000000000000
       internalID: -1418344718069729482
@@ -269,17 +181,17 @@ TextureImporter:
       name: fences and ladders etc_5
       rect:
         serializedVersion: 2
-        x: 114
-        y: 86
-        width: 13
-        height: 23
+        x: 48
+        y: 87
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 6215bb7d699cedf40800000000000000
       internalID: 5755259023527727398
@@ -291,17 +203,31 @@ TextureImporter:
       name: fences and ladders etc_6
       rect:
         serializedVersion: 2
-        x: 95
-        y: 38
-        width: 82
-        height: 17
+        x: 96
+        y: 87
+        width: 16
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -3, y: -4.5}
+        - {x: -2, y: -5.5}
+        - {x: -2, y: -7.5}
+        - {x: -1, y: -8.5}
+        - {x: 2, y: -8.5}
+        - {x: 3, y: -7.5}
+        - {x: 3, y: -5.5}
+        - {x: 4, y: -4.5}
+        - {x: 6, y: -4.5}
+        - {x: 6, y: -0.5}
+        - {x: 5, y: 0.5}
+        - {x: -4, y: 0.5}
+        - {x: -5, y: -0.5}
+        - {x: -5, y: -4.5}
+      tessellationDetail: 0
       bones: []
       spriteID: 729d385bbc1580ca0800000000000000
       internalID: -6050496164006733529
@@ -313,17 +239,31 @@ TextureImporter:
       name: fences and ladders etc_7
       rect:
         serializedVersion: 2
-        x: 115
-        y: 54
-        width: 42
-        height: 28
+        x: 112
+        y: 87
+        width: 16
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -2, y: -7.5}
+        - {x: -1, y: -8.5}
+        - {x: 2, y: -8.5}
+        - {x: 3, y: -7.5}
+        - {x: 3, y: -5.5}
+        - {x: 4, y: -4.5}
+        - {x: 6, y: -4.5}
+        - {x: 6, y: -0.5}
+        - {x: 5, y: 0.5}
+        - {x: -4, y: 0.5}
+        - {x: -5, y: -0.5}
+        - {x: -5, y: -4.5}
+        - {x: -3, y: -4.5}
+        - {x: -2, y: -5.5}
+      tessellationDetail: 0
       bones: []
       spriteID: 456d8d351402092d0800000000000000
       internalID: -3274081464146667948
@@ -335,17 +275,17 @@ TextureImporter:
       name: fences and ladders etc_8
       rect:
         serializedVersion: 2
-        x: 36
-        y: 22
-        width: 40
-        height: 17
+        x: 16
+        y: 70
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: a7bd9ec9d491f9370800000000000000
       internalID: 8331405656794454906
@@ -357,17 +297,21 @@ TextureImporter:
       name: fences and ladders etc_9
       rect:
         serializedVersion: 2
-        x: 84
-        y: 22
-        width: 8
-        height: 17
+        x: 32
+        y: 70
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -3, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 1}
+        - {x: -3, y: 1}
+      tessellationDetail: 0
       bones: []
       spriteID: 5b6b61d68366bbfc0800000000000000
       internalID: -3478073894679169355
@@ -379,20 +323,508 @@ TextureImporter:
       name: fences and ladders etc_10
       rect:
         serializedVersion: 2
-        x: 95
-        y: 22
-        width: 82
-        height: 17
+        x: 48
+        y: 70
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: baba7efc074fcc540800000000000000
+      internalID: 5029663649227582379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 70
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -5}
+        - {x: -3, y: -5}
+        - {x: -3, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ef9e0d803129f408155bb4b549b8e2
+      internalID: -1846922614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 70
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: 8}
+        - {x: -3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c3761186d0b334daf6da185dccfc3c
+      internalID: -705760527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 54
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: baba7efc074fcc540800000000000000
-      internalID: 5029663649227582379
+      spriteID: 7b078c8e6eaca074baaae43af5525ca4
+      internalID: -1786475867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_21
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 54
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2211e45608e1282478d13643f3212a44
+      internalID: 554913870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543c2b1143cfefc40a584a6e182c2248
+      internalID: 757164892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -3, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5ff27b8959b9d4880b53d4e8860995
+      internalID: -1321095394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953038567eebe834986bedeff2227629
+      internalID: -253656584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 3, y: -7}
+        - {x: 3, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e7f74bc95080a438a49ec4053b90d4
+      internalID: -401967196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_28
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -7}
+        - {x: 3, y: -7}
+        - {x: 3, y: 8}
+        - {x: -3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdb097f58ddff94f825a47c85c9c13a
+      internalID: 1947520560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abdf90c2eb24124d8e83e2c1dbe5336
+      internalID: -1710463118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_30
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843627a9bf4158d49a708be65f96e7bb
+      internalID: -1714229645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc713356120b91c48bd335e90d42f952
+      internalID: 1537906890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_32
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d9956b3979d874f9566dcbae118f3b
+      internalID: -1154734538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f016e8ccbe67ee4dab80f1699fabf10
+      internalID: -913946259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 22
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6a5dec5f8aea746be9535fae4058fc
+      internalID: 329884310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 22
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6533e1d58bb79614d9893021c80fa302
+      internalID: 1409407643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 22
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b16d5d8c8d87741853710990ac696b
+      internalID: -15579873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 22
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928bf9b26b93a334fa21305a688ec900
+      internalID: 1446643022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fences and ladders etc_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 22
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d2c68bcc8e9af4bb62ee6fa16c8876
+      internalID: 1006694969
       vertices: []
       indices: 
       edges: []
@@ -401,7 +833,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 81e2cedcd49a6a34fb767c5b76ed9e47
     internalID: 0
     vertices: []
     indices: 
@@ -414,9 +846,41 @@ TextureImporter:
       fences and ladders etc_0: -6937691069691847498
       fences and ladders etc_1: 4159903693556220759
       fences and ladders etc_10: 5029663649227582379
+      fences and ladders etc_11: -1846922614
+      fences and ladders etc_12: -705760527
+      fences and ladders etc_13: -711616188
+      fences and ladders etc_14: -97806922
+      fences and ladders etc_15: -1833634927
+      fences and ladders etc_16: -1786475867
+      fences and ladders etc_17: 1649320361
+      fences and ladders etc_18: 1247965665
+      fences and ladders etc_19: 1116944361
       fences and ladders etc_2: -5767246912768011974
+      fences and ladders etc_20: -61977901
+      fences and ladders etc_21: 554913870
+      fences and ladders etc_22: 824551249
+      fences and ladders etc_23: 1793064389
+      fences and ladders etc_24: 757164892
+      fences and ladders etc_25: -1321095394
+      fences and ladders etc_26: -253656584
+      fences and ladders etc_27: -401967196
+      fences and ladders etc_28: 1947520560
+      fences and ladders etc_29: -1710463118
       fences and ladders etc_3: 6198436807497187831
+      fences and ladders etc_30: -1714229645
+      fences and ladders etc_31: 1537906890
+      fences and ladders etc_32: -1154734538
+      fences and ladders etc_33: -913946259
+      fences and ladders etc_34: -400257215
+      fences and ladders etc_35: 296576297
+      fences and ladders etc_36: 221291864
+      fences and ladders etc_37: 488654444
+      fences and ladders etc_38: 329884310
+      fences and ladders etc_39: 1409407643
       fences and ladders etc_4: -1418344718069729482
+      fences and ladders etc_40: -15579873
+      fences and ladders etc_41: 1446643022
+      fences and ladders etc_42: 1006694969
       fences and ladders etc_5: 5755259023527727398
       fences and ladders etc_6: -6050496164006733529
       fences and ladders etc_7: -3274081464146667948

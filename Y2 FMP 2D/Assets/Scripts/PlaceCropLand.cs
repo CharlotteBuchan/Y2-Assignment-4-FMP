@@ -9,13 +9,15 @@ public class PlaceCropLand : MonoBehaviour
     [SerializeField] private Tilemap highlightMap;
 
     private Animator animator;
-    public CharacterMovement speedScript;
+    public PlayerInput speedScript;
 
+    private InventoryManager inventoryManager;
 
     private void Awake()
     {
+        inventoryManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryManager>();
         animator = GetComponent<Animator>();
-        speedScript = GetComponent<CharacterMovement>();
+        speedScript = GetComponent<PlayerInput>();
     }
 
 
@@ -25,21 +27,23 @@ public class PlaceCropLand : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
+            if (inventoryManager.GetSelectedItem(false).name == "Hoe")
+            {
+                //speedScript.enabled = false;
 
-            speedScript.speed = 0;
+                animator.SetBool("IsHoeing", true);
 
-            animator.SetBool("IsHoeing", true);
+                animator.Play("Hoeing Blend Tree");
 
-            animator.Play("Hoeing Blend Tree");
+                highlightMap.SetTile(currentCell, highlightTile);
 
-            highlightMap.SetTile(currentCell, highlightTile);
+                animator.SetBool("IsHoeing", false);
 
-            animator.SetBool("IsHoeing", false);
-        }
-
-        if ((animator.GetCurrentAnimatorStateInfo(0).IsName("Hoeing Blend Tree")) == false)
-        {
-            speedScript.speed = 20;
+                if (animator.GetCurrentAnimatorStateInfo(0).IsName("Hoeing Blend Tree") == false)
+                {
+                    //speedScript.enabled = true;
+                }
+            }
         }
     }
 }

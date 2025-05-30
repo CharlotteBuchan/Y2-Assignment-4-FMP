@@ -134,7 +134,7 @@ public class InventoryManager : MonoBehaviour
             {
                 item.usesLeft--;
 
-                if (item.usesLeft <= 0)
+                if (item.usesLeft <= 0 && item.refillable == false)
                 {
                     Destroy(itemInSlot.gameObject);
                 }

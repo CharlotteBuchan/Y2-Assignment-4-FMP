@@ -9,11 +9,11 @@ public class MoneySystem : MonoBehaviour
     private int purchasePrice;
     private int sellPrice;
     private string plural = "";
+    [SerializeField] GameObject animalSP;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        money = 25;
         inventoryManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryManager>();
     }
 
@@ -32,12 +32,16 @@ public class MoneySystem : MonoBehaviour
         textUI.text = (money + " Loti" + plural);
     }
 
-    public void PurchaseItem(Item item)
+    public void PurchaseItem(Item item, int uses)
     {
         purchasePrice = item.purchasePrice;
         if (money >= purchasePrice)
         {
             money -= purchasePrice;
+            if (item.useUp == false)
+            {
+                item.usesLeft = uses;
+            }
             inventoryManager.AddItem(item);
         }
 
@@ -46,6 +50,19 @@ public class MoneySystem : MonoBehaviour
             Debug.Log("NOT ENOUGH GRAH");
         }
     }
+
+    public void PurchaseAnimal(Animal animal)
+    {
+        purchasePrice = animal.purchasePrice;
+        if (money >= purchasePrice)
+        {
+            money -= purchasePrice;
+
+            GameObject newAnimal = Instantiate(animal.prefab, animalSP.transform.position, Quaternion.identity);
+            newAnimal.transform.parent = animalSP.transform;
+        }
+    }
+
 
     public void SellItem(Item item)
     {

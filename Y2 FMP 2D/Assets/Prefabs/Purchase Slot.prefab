@@ -441,11 +441,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf5691d97101fa46b9d92a49fb33f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 6ddbeb12d1ab07447a32d2f2bd8e8f08, type: 2}
+  item: {fileID: 11400000, guid: 19180bcd97425c944aa90919a6ef560c, type: 2}
+  animal: {fileID: 0}
   itemName: {fileID: 4319233145208760578}
   itemDesc: {fileID: 3588266052590647688}
   itemPriceTxt: {fileID: 7099617245472497025}
   itemIcon: {fileID: 4363493600851722946}
+  animalSP: {fileID: 0}
 --- !u!114 &5530214622129559092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,7 +494,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7137183824923398209}
         m_TargetAssemblyTypeName: PurchaseSlot, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

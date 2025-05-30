@@ -16,12 +16,15 @@ public class ObjectAction : MonoBehaviour
     public Item droppedItem;
     private InventoryManager inventoryManager;
     [SerializeField] private NightCycle nightCycle;
+    private InputControl playerInput;
+    private PlaceCrop cropScript;
 
 
     void Start()
     {
-
         player = GameObject.FindGameObjectWithTag("Player");
+        cropScript = player.GetComponent<PlaceCrop>();
+        playerInput = player.GetComponent<InputControl>();
         playerAnimator = player.GetComponent<Animator>();
         inventoryManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryManager>();
     }
@@ -47,7 +50,7 @@ public class ObjectAction : MonoBehaviour
         if (isDoing == false)
         {
             isDoing = true;
-            
+            //playerInput.enabled = false;
             StartCoroutine(treeFall(5f));
         }
     }
@@ -97,6 +100,8 @@ public class ObjectAction : MonoBehaviour
 
         AddItems();
 
+        //playerInput.enabled = true;
+
         this.gameObject.SetActive(false);
         
     }
@@ -108,11 +113,43 @@ public class ObjectAction : MonoBehaviour
 
     public void Harvest()
     {
+        playerAnimator.SetBool("IsHoeing", true);
 
+        StartCoroutine(Timer(2f));
+
+        playerAnimator.SetBool("IsHoeing", false);
+
+        cropScript.HarvestCrop();
+
+        AddItems();
+    }
+
+    public void Refill()
+    {
+        playerAnimator.SetBool("IsWatering", true);
+
+        StartCoroutine(Timer(2f));
+
+        playerAnimator.SetBool("IsWatering", false);
+
+        inventoryManager.GetSelectedItem(false).usesLeft = 25;
     }
 
     public void Sleep()
     {
+        playerInput.overide = true;
         nightCycle.isSleeping = true;
+    }
+
+    private IEnumerator Timer(float time)
+    {
+        float i = 0;
+        float rate = 1 / time;
+
+        while (i < 1)
+        {
+            i += Time.deltaTime * rate;
+            yield return 0;
+        }
     }
 }
