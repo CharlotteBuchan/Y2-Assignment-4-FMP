@@ -14,7 +14,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Start()
     {
-        moneySystem = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<MoneySystem>();
+        moneySystem = GameObject.FindGameObjectWithTag("EdittyYay").GetComponent<MoneySystem>();
         ChangeSelectedSlot(0);
     }
 

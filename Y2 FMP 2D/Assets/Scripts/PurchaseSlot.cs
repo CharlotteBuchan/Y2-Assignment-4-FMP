@@ -19,7 +19,7 @@ public class PurchaseSlot : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        moneySystem = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<MoneySystem>();
+        moneySystem = GameObject.FindGameObjectWithTag("EdittyYay").GetComponent<MoneySystem>();
 
         if (item != null)
         {

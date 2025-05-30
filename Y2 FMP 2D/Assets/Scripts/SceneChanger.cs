@@ -16,14 +16,14 @@ public class SceneChanger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (pauseUI.activeSelf == false)
+            if (pauseUI.activeSelf == true)
             {
-                pauseUI.SetActive(true);
+                pauseUI.SetActive(false);
             }
 
             else
             {
-                pauseUI.SetActive(false);
+                pauseUI.SetActive(true);
             }
         }
     }

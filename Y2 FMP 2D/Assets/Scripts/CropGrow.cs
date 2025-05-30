@@ -37,7 +37,7 @@ public class CropGrow : MonoBehaviour
 
     private void Start()
     {
-        dayOrNight = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<NightCycle>();
+        dayOrNight = GameObject.FindGameObjectWithTag("EdittyYay").GetComponent<NightCycle>();
         plantSprite = this.gameObject.GetComponent<SpriteRenderer>();
         animator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         watered = false;

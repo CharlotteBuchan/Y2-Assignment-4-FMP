@@ -73,7 +73,7 @@ public class NightCycle : MonoBehaviour
         nightLightBeamCol = nightLightBeam.GetComponent<Light2D>();
         playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<InputControl>();
         daysNum = 1;
-        StartCoroutine(CycleLength(60f));
+        StartCoroutine(CycleLength(20f));
     }
 
     // Update is called once per frame

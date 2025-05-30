@@ -31,7 +31,7 @@ public class InteractionPreset : MonoBehaviour
         growScript = this.GetComponent<CropGrow>();
         npcToPlayer = this.GetComponent<NpcToPlayer>();
         inventoryManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryManager>();
-        nightCycle = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<NightCycle>();
+        nightCycle = GameObject.FindGameObjectWithTag("EdittyYay").GetComponent<NightCycle>();
     }
 
     public enum InteractType

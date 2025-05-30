@@ -27,6 +27,7 @@ public class ObjectAction : MonoBehaviour
         playerInput = player.GetComponent<InputControl>();
         playerAnimator = player.GetComponent<Animator>();
         inventoryManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryManager>();
+        nightCycle = GameObject.FindGameObjectWithTag("EdittyYay").GetComponent<NightCycle>();
     }
 
     public void AddItems()
